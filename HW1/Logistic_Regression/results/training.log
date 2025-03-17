@@ -1,0 +1,30 @@
+🔹 Starting Sentiment Analysis Training Process
+Class distribution:
+sentiment
+ 1    27917
+ 0    25364
+-1    16566
+Name: count, dtype: int64
+--------------------------
+
+TF-IDF Feature Shape: (55877, 1000)
+--------------------------
+
+Cross-Validation Scores: [0.82202935 0.82784538 0.82487696 0.82290828 0.82917226]
+Mean Accuracy: 0.8254
+Standard Deviation: 0.0028
+--------------------------
+
+Final Model Accuracy on Test Set: 0.8276306370794559
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.86      0.68      0.76      3313
+     Neutral       0.78      0.96      0.86      5073
+    Positive       0.87      0.79      0.83      5584
+
+    accuracy                           0.83     13970
+   macro avg       0.84      0.81      0.82     13970
+weighted avg       0.84      0.83      0.82     13970
+

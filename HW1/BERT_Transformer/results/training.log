@@ -1,0 +1,22 @@
+Example Tokenized Text: torch.Size([55877, 50])
+-----------
+
+Using device: {device}
+--------------------------
+
+PyTorch version 2.6.0.dev20241112 available.
+Test Accuracy: 0.9613
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.93      0.94      0.94      3313
+     Neutral       0.98      0.98      0.98      5073
+    Positive       0.96      0.96      0.96      5584
+
+    accuracy                           0.96     13970
+   macro avg       0.96      0.96      0.96     13970
+weighted avg       0.96      0.96      0.96     13970
+
+--------------------------
+
