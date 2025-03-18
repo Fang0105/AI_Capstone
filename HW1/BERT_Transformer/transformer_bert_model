@@ -1,0 +1,4894 @@
+digraph {
+	graph [size="427.65,427.65"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	6015495040 [label="
+ (1, 3)" fillcolor=darkolivegreen1]
+	6083374480 -> 6015523792 [dir=none]
+	6015523792 [label="input
+ (1, 256)" fillcolor=orange]
+	6083374480 -> 5766089360 [dir=none]
+	5766089360 [label="weight
+ (3, 256)" fillcolor=orange]
+	6083374480 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083787408 -> 6083374480
+	6083787408 -> 6015484608 [dir=none]
+	6015484608 [label="other
+ (1, 256)" fillcolor=orange]
+	6083787408 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6083785824 -> 6083787408
+	6083785824 -> 6015487728 [dir=none]
+	6015487728 [label="result
+ (1, 256)" fillcolor=orange]
+	6083785824 [label="ReluBackward0
+----------------------
+result: [saved tensor]"]
+	6083787840 -> 6083785824
+	6083787840 -> 6015486768 [dir=none]
+	6015486768 [label="input
+ (1, 768)" fillcolor=orange]
+	6083787840 -> 5766086880 [dir=none]
+	5766086880 [label="weight
+ (256, 768)" fillcolor=orange]
+	6083787840 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083787696 -> 6083787840
+	6083787696 [label="MeanBackward1
+----------------------------
+dim           :         (1,)
+keepdim       :        False
+self_sym_numel:        38400
+self_sym_sizes: (1, 50, 768)"]
+	6083787936 -> 6083787696
+	6083787936 -> 6015521632 [dir=none]
+	6015521632 [label="bias
+ (768)" fillcolor=orange]
+	6083787936 -> 6015522112 [dir=none]
+	6015522112 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083787936 -> 6015485328 [dir=none]
+	6015485328 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083787936 -> 6015485968 [dir=none]
+	6015485968 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083787936 -> 6015522432 [dir=none]
+	6015522432 [label="weight
+ (768)" fillcolor=orange]
+	6083787936 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083788032 -> 6083787936
+	6083788032 [label="AddBackward0
+------------
+alpha: 1"]
+	6083788224 -> 6083788032
+	6083788224 -> 6015522832 [dir=none]
+	6015522832 [label="bias
+ (768)" fillcolor=orange]
+	6083788224 -> 6015523552 [dir=none]
+	6015523552 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083788224 -> 6015485888 [dir=none]
+	6015485888 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083788224 -> 6015485408 [dir=none]
+	6015485408 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083788224 -> 6015522352 [dir=none]
+	6015522352 [label="weight
+ (768)" fillcolor=orange]
+	6083788224 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083788368 -> 6083788224
+	6083788368 [label="AddBackward0
+------------
+alpha: 1"]
+	6083788560 -> 6083788368
+	6083788560 -> 6015524112 [dir=none]
+	6015524112 [label="bias
+ (768)" fillcolor=orange]
+	6083788560 -> 6015521792 [dir=none]
+	6015521792 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083788560 -> 6015485728 [dir=none]
+	6015485728 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083788560 -> 6015484928 [dir=none]
+	6015484928 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083788560 -> 6015523472 [dir=none]
+	6015523472 [label="weight
+ (768)" fillcolor=orange]
+	6083788560 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083788704 -> 6083788560
+	6083788704 [label="AddBackward0
+------------
+alpha: 1"]
+	6083973280 -> 6083788704
+	6083973280 -> 6015524592 [dir=none]
+	6015524592 [label="bias
+ (768)" fillcolor=orange]
+	6083973280 -> 5766109680 [dir=none]
+	5766109680 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083973280 -> 6015485248 [dir=none]
+	6015485248 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083973280 -> 6015484448 [dir=none]
+	6015484448 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083973280 -> 6015524032 [dir=none]
+	6015524032 [label="weight
+ (768)" fillcolor=orange]
+	6083973280 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083973424 -> 6083973280
+	6083973424 [label="AddBackward0
+------------
+alpha: 1"]
+	6083973616 -> 6083973424
+	6083973616 -> 6083399168 [dir=none]
+	6083399168 [label="bias
+ (768)" fillcolor=orange]
+	6083973616 -> 6015492400 [dir=none]
+	6015492400 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083973616 -> 6015484768 [dir=none]
+	6015484768 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083973616 -> 6015483968 [dir=none]
+	6015483968 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083973616 -> 6083399248 [dir=none]
+	6083399248 [label="weight
+ (768)" fillcolor=orange]
+	6083973616 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083973760 -> 6083973616
+	6083973760 [label="AddBackward0
+------------
+alpha: 1"]
+	6083973952 -> 6083973760
+	6083973952 -> 6015494080 [dir=none]
+	6015494080 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6083973952 -> 6083398848 [dir=none]
+	6083398848 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6083973952 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974096 -> 6083973952
+	6083974096 -> 6015492160 [dir=none]
+	6015492160 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6083974096 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6083974288 -> 6083974096
+	6083974288 -> 6015492880 [dir=none]
+	6015492880 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083974288 -> 6083398928 [dir=none]
+	6083398928 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6083974288 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083973904 -> 6083974288
+	6083973904 -> 6083398688 [dir=none]
+	6083398688 [label="bias
+ (768)" fillcolor=orange]
+	6083973904 -> 6015493120 [dir=none]
+	6015493120 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083973904 -> 6015389264 [dir=none]
+	6015389264 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083973904 -> 6015388784 [dir=none]
+	6015388784 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083973904 -> 6083398768 [dir=none]
+	6083398768 [label="weight
+ (768)" fillcolor=orange]
+	6083973904 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083974528 -> 6083973904
+	6083974528 [label="AddBackward0
+------------
+alpha: 1"]
+	6083974720 -> 6083974528
+	6083974720 -> 6015522512 [dir=none]
+	6015522512 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083974720 -> 6083398528 [dir=none]
+	6083398528 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083974720 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974864 -> 6083974720
+	6083974864 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6083975056 -> 6083974864
+	6083975056 [label=CloneBackward0]
+	6083975152 -> 6083975056
+	6083975152 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6083975248 -> 6083975152
+	6083975248 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6083975344 -> 6083975248
+	6083975344 -> 6015389104 [dir=none]
+	6015389104 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6083975344 -> 6015388384 [dir=none]
+	6015388384 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6083975344 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083975440 -> 6083975344
+	6083975440 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6083975584 -> 6083975440
+	6083975584 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6083975680 -> 6083975584
+	6083975680 -> 6015524928 [dir=none]
+	6015524928 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6083975680 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6083975824 -> 6083975680
+	6083975824 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6083975920 -> 6083975824
+	6083975920 -> 6083768048 [dir=none]
+	6083768048 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6083975920 -> 6083767088 [dir=none]
+	6083767088 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6083975920 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083976016 -> 6083975920
+	6083976016 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083976160 -> 6083976016
+	6083976160 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083976256 -> 6083976160
+	6083976256 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6083976352 -> 6083976256
+	6083976352 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083976448 -> 6083976352
+	6083976448 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083976544 -> 6083976448
+	6083976544 -> 6015496000 [dir=none]
+	6015496000 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083976544 -> 6083398048 [dir=none]
+	6083398048 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083976544 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974672 -> 6083976544
+	6083974672 -> 6083397888 [dir=none]
+	6083397888 [label="bias
+ (768)" fillcolor=orange]
+	6083974672 -> 6015493600 [dir=none]
+	6015493600 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083974672 -> 6083766768 [dir=none]
+	6083766768 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083974672 -> 6083767728 [dir=none]
+	6083767728 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083974672 -> 6083397968 [dir=none]
+	6083397968 [label="weight
+ (768)" fillcolor=orange]
+	6083974672 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083976784 -> 6083974672
+	6083976784 [label="AddBackward0
+------------
+alpha: 1"]
+	6083976976 -> 6083976784
+	6083976976 -> 6015493840 [dir=none]
+	6015493840 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6083976976 -> 6083397568 [dir=none]
+	6083397568 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6083976976 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083977120 -> 6083976976
+	6083977120 -> 6015496576 [dir=none]
+	6015496576 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6083977120 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084083776 -> 6083977120
+	6084083776 -> 6015495760 [dir=none]
+	6015495760 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084083776 -> 6083397648 [dir=none]
+	6083397648 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084083776 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083976928 -> 6084083776
+	6083976928 -> 6083397408 [dir=none]
+	6083397408 [label="bias
+ (768)" fillcolor=orange]
+	6083976928 -> 6015494320 [dir=none]
+	6015494320 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083976928 -> 6083766208 [dir=none]
+	6083766208 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083976928 -> 6083765968 [dir=none]
+	6083765968 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083976928 -> 6083397488 [dir=none]
+	6083397488 [label="weight
+ (768)" fillcolor=orange]
+	6083976928 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084084112 -> 6083976928
+	6084084112 [label="AddBackward0
+------------
+alpha: 1"]
+	6084084304 -> 6084084112
+	6084084304 -> 6015493360 [dir=none]
+	6015493360 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084084304 -> 6083397248 [dir=none]
+	6083397248 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084084304 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084084448 -> 6084084304
+	6084084448 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6084084640 -> 6084084448
+	6084084640 [label=CloneBackward0]
+	6084084736 -> 6084084640
+	6084084736 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6084084832 -> 6084084736
+	6084084832 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6084084928 -> 6084084832
+	6084084928 -> 6083764848 [dir=none]
+	6083764848 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6084084928 -> 6083765648 [dir=none]
+	6083765648 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6084084928 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084085024 -> 6084084928
+	6084085024 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084085168 -> 6084085024
+	6084085168 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084085264 -> 6084085168
+	6084085264 -> 6083764448 [dir=none]
+	6083764448 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6084085264 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084085360 -> 6084085264
+	6084085360 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6084085456 -> 6084085360
+	6084085456 -> 6083767008 [dir=none]
+	6083767008 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6084085456 -> 6083767568 [dir=none]
+	6083767568 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6084085456 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084085552 -> 6084085456
+	6084085552 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084085696 -> 6084085552
+	6084085696 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084085792 -> 6084085696
+	6084085792 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084085888 -> 6084085792
+	6084085888 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084085984 -> 6084085888
+	6084085984 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084086080 -> 6084085984
+	6084086080 -> 6015494560 [dir=none]
+	6015494560 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084086080 -> 6083396768 [dir=none]
+	6083396768 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084086080 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084084256 -> 6084086080
+	6084084256 -> 6083396608 [dir=none]
+	6083396608 [label="bias
+ (768)" fillcolor=orange]
+	6084084256 -> 6015494800 [dir=none]
+	6015494800 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084084256 -> 6083153808 [dir=none]
+	6083153808 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084084256 -> 6083766608 [dir=none]
+	6083766608 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084084256 -> 6083396688 [dir=none]
+	6083396688 [label="weight
+ (768)" fillcolor=orange]
+	6084084256 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084086320 -> 6084084256
+	6084086320 [label="AddBackward0
+------------
+alpha: 1"]
+	6084086512 -> 6084086320
+	6084086512 -> 6015498736 [dir=none]
+	6015498736 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6084086512 -> 6083396368 [dir=none]
+	6083396368 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6084086512 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084086656 -> 6084086512
+	6084086656 -> 6015497056 [dir=none]
+	6015497056 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6084086656 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084086848 -> 6084086656
+	6084086848 -> 6015498016 [dir=none]
+	6015498016 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084086848 -> 6083396448 [dir=none]
+	6083396448 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084086848 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084086464 -> 6084086848
+	6084086464 -> 6083396128 [dir=none]
+	6083396128 [label="bias
+ (768)" fillcolor=orange]
+	6084086464 -> 6015496816 [dir=none]
+	6015496816 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084086464 -> 6083399408 [dir=none]
+	6083399408 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084086464 -> 6084007552 [dir=none]
+	6084007552 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084086464 -> 6083396208 [dir=none]
+	6083396208 [label="weight
+ (768)" fillcolor=orange]
+	6084086464 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084087088 -> 6084086464
+	6084087088 [label="AddBackward0
+------------
+alpha: 1"]
+	6084087280 -> 6084087088
+	6084087280 -> 6015495280 [dir=none]
+	6015495280 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084087280 -> 6083395968 [dir=none]
+	6083395968 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084087280 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084087424 -> 6084087280
+	6084087424 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6084087616 -> 6084087424
+	6084087616 [label=CloneBackward0]
+	6084087712 -> 6084087616
+	6084087712 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6084087760 -> 6084087712
+	6084087760 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6084071584 -> 6084087760
+	6084071584 -> 6084006992 [dir=none]
+	6084006992 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6084071584 -> 6084007072 [dir=none]
+	6084007072 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6084071584 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084071728 -> 6084071584
+	6084071728 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084071872 -> 6084071728
+	6084071872 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084071968 -> 6084071872
+	6084071968 -> 6084006432 [dir=none]
+	6084006432 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6084071968 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084072064 -> 6084071968
+	6084072064 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6084072160 -> 6084072064
+	6084072160 -> 6084006112 [dir=none]
+	6084006112 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6084072160 -> 6084006272 [dir=none]
+	6084006272 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6084072160 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084072256 -> 6084072160
+	6084072256 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084072400 -> 6084072256
+	6084072400 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084072496 -> 6084072400
+	6084072496 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084072592 -> 6084072496
+	6084072592 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084072688 -> 6084072592
+	6084072688 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084072784 -> 6084072688
+	6084072784 -> 6015499936 [dir=none]
+	6015499936 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084072784 -> 6083153248 [dir=none]
+	6083153248 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084072784 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084087232 -> 6084072784
+	6084087232 -> 6083153488 [dir=none]
+	6083153488 [label="bias
+ (768)" fillcolor=orange]
+	6084087232 -> 6015497536 [dir=none]
+	6015497536 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084087232 -> 6084008032 [dir=none]
+	6084008032 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084087232 -> 6084005952 [dir=none]
+	6084005952 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084087232 -> 6083153648 [dir=none]
+	6083153648 [label="weight
+ (768)" fillcolor=orange]
+	6084087232 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084073120 -> 6084087232
+	6084073120 [label="AddBackward0
+------------
+alpha: 1"]
+	6084073312 -> 6084073120
+	6084073312 -> 6015497776 [dir=none]
+	6015497776 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6084073312 -> 6083153328 [dir=none]
+	6083153328 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6084073312 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084073456 -> 6084073312
+	6084073456 -> 6015498256 [dir=none]
+	6015498256 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6084073456 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084073648 -> 6084073456
+	6084073648 -> 6015499696 [dir=none]
+	6015499696 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084073648 -> 6083153408 [dir=none]
+	6083153408 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084073648 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084073264 -> 6084073648
+	6084073264 -> 6083153088 [dir=none]
+	6083153088 [label="bias
+ (768)" fillcolor=orange]
+	6084073264 -> 6015500176 [dir=none]
+	6015500176 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084073264 -> 6084009712 [dir=none]
+	6084009712 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084073264 -> 6084009552 [dir=none]
+	6084009552 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084073264 -> 6083153168 [dir=none]
+	6083153168 [label="weight
+ (768)" fillcolor=orange]
+	6084073264 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084073936 -> 6084073264
+	6084073936 [label="AddBackward0
+------------
+alpha: 1"]
+	6084074128 -> 6084073936
+	6084074128 -> 6015497296 [dir=none]
+	6015497296 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084074128 -> 6083152928 [dir=none]
+	6083152928 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084074128 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084074272 -> 6084074128
+	6084074272 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6084074464 -> 6084074272
+	6084074464 [label=CloneBackward0]
+	6084074560 -> 6084074464
+	6084074560 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6084074608 -> 6084074560
+	6084074608 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6084074752 -> 6084074608
+	6084074752 -> 6083933904 [dir=none]
+	6083933904 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6084074752 -> 6083933584 [dir=none]
+	6083933584 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6084074752 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084075040 -> 6084074752
+	6084075040 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084075184 -> 6084075040
+	6084075184 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084075280 -> 6084075184
+	6084075280 -> 6083935984 [dir=none]
+	6083935984 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6084075280 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084075472 -> 6084075280
+	6084075472 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6084075088 -> 6084075472
+	6084075088 -> 6083935664 [dir=none]
+	6083935664 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6084075088 -> 6083935824 [dir=none]
+	6083935824 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6084075088 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083928368 -> 6084075088
+	6083928368 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083928512 -> 6083928368
+	6083928512 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083928608 -> 6083928512
+	6083928608 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6083928656 -> 6083928608
+	6083928656 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083928800 -> 6083928656
+	6083928800 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083928944 -> 6083928800
+	6083928944 -> 6015498496 [dir=none]
+	6015498496 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083928944 -> 6083151968 [dir=none]
+	6083151968 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083928944 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084074080 -> 6083928944
+	6084074080 -> 6083152208 [dir=none]
+	6083152208 [label="bias
+ (768)" fillcolor=orange]
+	6084074080 -> 6015499216 [dir=none]
+	6015499216 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084074080 -> 6083934624 [dir=none]
+	6083934624 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084074080 -> 6083935504 [dir=none]
+	6083935504 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084074080 -> 6083152368 [dir=none]
+	6083152368 [label="weight
+ (768)" fillcolor=orange]
+	6084074080 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083929376 -> 6084074080
+	6083929376 [label="AddBackward0
+------------
+alpha: 1"]
+	6083929568 -> 6083929376
+	6083929568 -> 6015502672 [dir=none]
+	6015502672 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6083929568 -> 6083152048 [dir=none]
+	6083152048 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6083929568 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083929712 -> 6083929568
+	6083929712 -> 6015500992 [dir=none]
+	6015500992 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6083929712 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6083929904 -> 6083929712
+	6083929904 -> 6015501952 [dir=none]
+	6015501952 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083929904 -> 6083152128 [dir=none]
+	6083152128 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6083929904 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083929520 -> 6083929904
+	6083929520 -> 6083151808 [dir=none]
+	6083151808 [label="bias
+ (768)" fillcolor=orange]
+	6083929520 -> 6015500752 [dir=none]
+	6015500752 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083929520 -> 6083934304 [dir=none]
+	6083934304 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083929520 -> 6083933024 [dir=none]
+	6083933024 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083929520 -> 6083151888 [dir=none]
+	6083151888 [label="weight
+ (768)" fillcolor=orange]
+	6083929520 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083930192 -> 6083929520
+	6083930192 [label="AddBackward0
+------------
+alpha: 1"]
+	6083930384 -> 6083930192
+	6083930384 -> 6015498976 [dir=none]
+	6015498976 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083930384 -> 6083151648 [dir=none]
+	6083151648 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083930384 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083930528 -> 6083930384
+	6083930528 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6083930720 -> 6083930528
+	6083930720 [label=CloneBackward0]
+	6083930816 -> 6083930720
+	6083930816 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6083930864 -> 6083930816
+	6083930864 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6083931008 -> 6083930864
+	6083931008 -> 6083933344 [dir=none]
+	6083933344 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6083931008 -> 6083932224 [dir=none]
+	6083932224 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6083931008 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083931296 -> 6083931008
+	6083931296 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6083931440 -> 6083931296
+	6083931440 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6083931536 -> 6083931440
+	6083931536 -> 6084087872 [dir=none]
+	6084087872 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6083931536 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6083931728 -> 6083931536
+	6083931728 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6083931824 -> 6083931728
+	6083931824 -> 6084088192 [dir=none]
+	6084088192 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6083931824 -> 6084088032 [dir=none]
+	6084088032 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6083931824 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083932016 -> 6083931824
+	6083932016 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083932112 -> 6083932016
+	6083932112 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084034720 -> 6083932112
+	6084034720 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084034768 -> 6084034720
+	6084034768 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084034912 -> 6084034768
+	6084034912 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084035056 -> 6084034912
+	6084035056 -> 6015503872 [dir=none]
+	6015503872 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084035056 -> 6083150688 [dir=none]
+	6083150688 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084035056 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083930336 -> 6084035056
+	6083930336 -> 6083150928 [dir=none]
+	6083150928 [label="bias
+ (768)" fillcolor=orange]
+	6083930336 -> 6015501472 [dir=none]
+	6015501472 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083930336 -> 6084089232 [dir=none]
+	6084089232 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083930336 -> 6084088352 [dir=none]
+	6084088352 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083930336 -> 6083151088 [dir=none]
+	6083151088 [label="weight
+ (768)" fillcolor=orange]
+	6083930336 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084035488 -> 6083930336
+	6084035488 [label="AddBackward0
+------------
+alpha: 1"]
+	6084035680 -> 6084035488
+	6084035680 -> 6015501712 [dir=none]
+	6015501712 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6084035680 -> 6083150768 [dir=none]
+	6083150768 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6084035680 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084035824 -> 6084035680
+	6084035824 -> 6015502192 [dir=none]
+	6015502192 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6084035824 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084036016 -> 6084035824
+	6084036016 -> 6015503632 [dir=none]
+	6015503632 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084036016 -> 6083150848 [dir=none]
+	6083150848 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084036016 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084035632 -> 6084036016
+	6084035632 -> 6083150528 [dir=none]
+	6083150528 [label="bias
+ (768)" fillcolor=orange]
+	6084035632 -> 6015504112 [dir=none]
+	6015504112 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084035632 -> 6084089552 [dir=none]
+	6084089552 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084035632 -> 6084089792 [dir=none]
+	6084089792 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084035632 -> 6083150608 [dir=none]
+	6083150608 [label="weight
+ (768)" fillcolor=orange]
+	6084035632 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084036304 -> 6084035632
+	6084036304 [label="AddBackward0
+------------
+alpha: 1"]
+	6084036496 -> 6084036304
+	6084036496 -> 6015501232 [dir=none]
+	6015501232 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084036496 -> 6083150368 [dir=none]
+	6083150368 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084036496 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084036640 -> 6084036496
+	6084036640 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6084036832 -> 6084036640
+	6084036832 [label=CloneBackward0]
+	6084036928 -> 6084036832
+	6084036928 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6084036976 -> 6084036928
+	6084036976 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6084037120 -> 6084036976
+	6084037120 -> 6084090432 [dir=none]
+	6084090432 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6084037120 -> 6084090352 [dir=none]
+	6084090352 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6084037120 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084037408 -> 6084037120
+	6084037408 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084037552 -> 6084037408
+	6084037552 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084037648 -> 6084037552
+	6084037648 -> 6084090992 [dir=none]
+	6084090992 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6084037648 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084037840 -> 6084037648
+	6084037840 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6084037936 -> 6084037840
+	6084037936 -> 6084091312 [dir=none]
+	6084091312 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6084037936 -> 6084091152 [dir=none]
+	6084091152 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6084037936 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084038128 -> 6084037936
+	6084038128 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084038272 -> 6084038128
+	6084038272 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084038368 -> 6084038272
+	6084038368 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084038416 -> 6084038368
+	6084038416 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084038560 -> 6084038416
+	6084038560 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084038768 -> 6084038560
+	6084038768 -> 6015502432 [dir=none]
+	6015502432 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084038768 -> 6035713536 [dir=none]
+	6035713536 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084038768 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084036448 -> 6084038768
+	6084036448 -> 6035713776 [dir=none]
+	6035713776 [label="bias
+ (768)" fillcolor=orange]
+	6084036448 -> 6015503152 [dir=none]
+	6015503152 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084036448 -> 6084043296 [dir=none]
+	6084043296 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084036448 -> 6084042816 [dir=none]
+	6084042816 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084036448 -> 6035713936 [dir=none]
+	6035713936 [label="weight
+ (768)" fillcolor=orange]
+	6084036448 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084039200 -> 6084036448
+	6084039200 [label="AddBackward0
+------------
+alpha: 1"]
+	6084039392 -> 6084039200
+	6084039392 -> 6015506608 [dir=none]
+	6015506608 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6084039392 -> 6035713616 [dir=none]
+	6035713616 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6084039392 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084039536 -> 6084039392
+	6084039536 -> 6015504928 [dir=none]
+	6015504928 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6084039536 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084039728 -> 6084039536
+	6084039728 -> 6015505888 [dir=none]
+	6015505888 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084039728 -> 6035713696 [dir=none]
+	6035713696 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084039728 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084039344 -> 6084039728
+	6084039344 -> 6035713376 [dir=none]
+	6035713376 [label="bias
+ (768)" fillcolor=orange]
+	6084039344 -> 6015504688 [dir=none]
+	6015504688 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084039344 -> 6084043616 [dir=none]
+	6084043616 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084039344 -> 6084043856 [dir=none]
+	6084043856 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084039344 -> 6035713456 [dir=none]
+	6035713456 [label="weight
+ (768)" fillcolor=orange]
+	6084039344 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084040016 -> 6084039344
+	6084040016 [label="AddBackward0
+------------
+alpha: 1"]
+	6084040208 -> 6084040016
+	6084040208 -> 6015502912 [dir=none]
+	6015502912 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084040208 -> 6035713216 [dir=none]
+	6035713216 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084040208 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084040352 -> 6084040208
+	6084040352 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6084040544 -> 6084040352
+	6084040544 [label=CloneBackward0]
+	6084040640 -> 6084040544
+	6084040640 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6084040688 -> 6084040640
+	6084040688 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6084040832 -> 6084040688
+	6084040832 -> 6084044496 [dir=none]
+	6084044496 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6084040832 -> 6084044416 [dir=none]
+	6084044416 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6084040832 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084041120 -> 6084040832
+	6084041120 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084041264 -> 6084041120
+	6084041264 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084041360 -> 6084041264
+	6084041360 -> 6084045056 [dir=none]
+	6084045056 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6084041360 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084041552 -> 6084041360
+	6084041552 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6084041648 -> 6084041552
+	6084041648 -> 6084045376 [dir=none]
+	6084045376 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6084041648 -> 6084045216 [dir=none]
+	6084045216 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6084041648 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084041840 -> 6084041648
+	6084041840 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084041984 -> 6084041840
+	6084041984 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084042080 -> 6084041984
+	6084042080 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084042128 -> 6084042080
+	6084042128 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084042272 -> 6084042128
+	6084042272 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084042416 -> 6084042272
+	6084042416 -> 6015507808 [dir=none]
+	6015507808 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084042416 -> 6035712256 [dir=none]
+	6035712256 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084042416 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084040160 -> 6084042416
+	6084040160 -> 6035712496 [dir=none]
+	6035712496 [label="bias
+ (768)" fillcolor=orange]
+	6084040160 -> 6015505408 [dir=none]
+	6015505408 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084040160 -> 6084046416 [dir=none]
+	6084046416 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084040160 -> 6084045536 [dir=none]
+	6084045536 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084040160 -> 6035712656 [dir=none]
+	6035712656 [label="weight
+ (768)" fillcolor=orange]
+	6084040160 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083874976 -> 6084040160
+	6083874976 [label="AddBackward0
+------------
+alpha: 1"]
+	6083875168 -> 6083874976
+	6083875168 -> 6015507568 [dir=none]
+	6015507568 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6083875168 -> 6035712336 [dir=none]
+	6035712336 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6083875168 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083875312 -> 6083875168
+	6083875312 -> 6015506128 [dir=none]
+	6015506128 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6083875312 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6083875504 -> 6083875312
+	6083875504 -> 6015508288 [dir=none]
+	6015508288 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083875504 -> 6035712416 [dir=none]
+	6035712416 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6083875504 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083875120 -> 6083875504
+	6083875120 -> 6035712096 [dir=none]
+	6035712096 [label="bias
+ (768)" fillcolor=orange]
+	6083875120 -> 6015508048 [dir=none]
+	6015508048 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083875120 -> 6084046992 [dir=none]
+	6084046992 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083875120 -> 6084047072 [dir=none]
+	6084047072 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083875120 -> 6035712176 [dir=none]
+	6035712176 [label="weight
+ (768)" fillcolor=orange]
+	6083875120 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083875792 -> 6083875120
+	6083875792 [label="AddBackward0
+------------
+alpha: 1"]
+	6083875984 -> 6083875792
+	6083875984 -> 6015505168 [dir=none]
+	6015505168 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083875984 -> 6035711936 [dir=none]
+	6035711936 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083875984 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083876128 -> 6083875984
+	6083876128 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6083876320 -> 6083876128
+	6083876320 [label=CloneBackward0]
+	6083876416 -> 6083876320
+	6083876416 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6083876464 -> 6083876416
+	6083876464 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6083876608 -> 6083876464
+	6083876608 -> 6084047712 [dir=none]
+	6084047712 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6083876608 -> 6084047632 [dir=none]
+	6084047632 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6083876608 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083876896 -> 6083876608
+	6083876896 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6083877040 -> 6083876896
+	6083877040 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6083877136 -> 6083877040
+	6083877136 -> 6084048272 [dir=none]
+	6084048272 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6083877136 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6083877328 -> 6083877136
+	6083877328 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6083877424 -> 6083877328
+	6083877424 -> 6084048592 [dir=none]
+	6084048592 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6083877424 -> 6084048432 [dir=none]
+	6084048432 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6083877424 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083877616 -> 6083877424
+	6083877616 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083877760 -> 6083877616
+	6083877760 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083877856 -> 6083877760
+	6083877856 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6083877904 -> 6083877856
+	6083877904 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083878048 -> 6083877904
+	6083878048 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083878192 -> 6083878048
+	6083878192 -> 6015506368 [dir=none]
+	6015506368 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083878192 -> 6035710976 [dir=none]
+	6035710976 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083878192 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083875936 -> 6083878192
+	6083875936 -> 6035711216 [dir=none]
+	6035711216 [label="bias
+ (768)" fillcolor=orange]
+	6083875936 -> 6015505648 [dir=none]
+	6015505648 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083875936 -> 6084049632 [dir=none]
+	6084049632 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083875936 -> 6084048752 [dir=none]
+	6084048752 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083875936 -> 6035711376 [dir=none]
+	6035711376 [label="weight
+ (768)" fillcolor=orange]
+	6083875936 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6083878624 -> 6083875936
+	6083878624 [label="AddBackward0
+------------
+alpha: 1"]
+	6083878816 -> 6083878624
+	6083878816 -> 6015507088 [dir=none]
+	6015507088 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6083878816 -> 6035711056 [dir=none]
+	6035711056 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6083878816 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083878864 -> 6083878816
+	6083878864 -> 6015512720 [dir=none]
+	6015512720 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6083878864 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084092208 -> 6083878864
+	6084092208 -> 6015513680 [dir=none]
+	6015513680 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084092208 -> 6035711136 [dir=none]
+	6035711136 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084092208 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083878768 -> 6084092208
+	6083878768 -> 6035710816 [dir=none]
+	6035710816 [label="bias
+ (768)" fillcolor=orange]
+	6083878768 -> 6015513920 [dir=none]
+	6015513920 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083878768 -> 6084049952 [dir=none]
+	6084049952 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6083878768 -> 6084050192 [dir=none]
+	6084050192 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6083878768 -> 6035710896 [dir=none]
+	6035710896 [label="weight
+ (768)" fillcolor=orange]
+	6083878768 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084092496 -> 6083878768
+	6084092496 [label="AddBackward0
+------------
+alpha: 1"]
+	6084092688 -> 6084092496
+	6084092688 -> 6015506848 [dir=none]
+	6015506848 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084092688 -> 6035710656 [dir=none]
+	6035710656 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084092688 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084092832 -> 6084092688
+	6084092832 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6084093024 -> 6084092832
+	6084093024 [label=CloneBackward0]
+	6084093120 -> 6084093024
+	6084093120 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6084093168 -> 6084093120
+	6084093168 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6084093312 -> 6084093168
+	6084093312 -> 6173507808 [dir=none]
+	6173507808 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6084093312 -> 6173507648 [dir=none]
+	6173507648 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6084093312 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084093600 -> 6084093312
+	6084093600 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084093744 -> 6084093600
+	6084093744 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6084093840 -> 6084093744
+	6084093840 -> 6173508128 [dir=none]
+	6173508128 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6084093840 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084094032 -> 6084093840
+	6084094032 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6084094128 -> 6084094032
+	6084094128 -> 6173508448 [dir=none]
+	6173508448 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6084094128 -> 6173508288 [dir=none]
+	6173508288 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6084094128 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084094320 -> 6084094128
+	6084094320 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084094464 -> 6084094320
+	6084094464 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084094560 -> 6084094464
+	6084094560 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084094608 -> 6084094560
+	6084094608 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084094752 -> 6084094608
+	6084094752 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084094896 -> 6084094752
+	6084094896 -> 6015515840 [dir=none]
+	6015515840 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084094896 -> 6015528608 [dir=none]
+	6015528608 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084094896 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084092640 -> 6084094896
+	6084092640 -> 6015528848 [dir=none]
+	6015528848 [label="bias
+ (768)" fillcolor=orange]
+	6084092640 -> 6015513440 [dir=none]
+	6015513440 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084092640 -> 6173509488 [dir=none]
+	6173509488 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084092640 -> 6173508608 [dir=none]
+	6173508608 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084092640 -> 6035710096 [dir=none]
+	6035710096 [label="weight
+ (768)" fillcolor=orange]
+	6084092640 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6084095328 -> 6084092640
+	6084095328 [label="AddBackward0
+------------
+alpha: 1"]
+	6084095520 -> 6084095328
+	6084095520 -> 6015515600 [dir=none]
+	6015515600 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6084095520 -> 6015528688 [dir=none]
+	6015528688 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6084095520 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084095664 -> 6084095520
+	6084095664 -> 6015514160 [dir=none]
+	6015514160 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6084095664 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6084095856 -> 6084095664
+	6084095856 -> 6015516320 [dir=none]
+	6015516320 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084095856 -> 6015528768 [dir=none]
+	6015528768 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6084095856 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084095472 -> 6084095856
+	6084095472 -> 6015528448 [dir=none]
+	6015528448 [label="bias
+ (768)" fillcolor=orange]
+	6084095472 -> 6015516080 [dir=none]
+	6015516080 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084095472 -> 6173509808 [dir=none]
+	6173509808 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6084095472 -> 6173510048 [dir=none]
+	6173510048 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6084095472 -> 6015528528 [dir=none]
+	6015528528 [label="weight
+ (768)" fillcolor=orange]
+	6084095472 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6173515984 -> 6084095472
+	6173515984 [label="AddBackward0
+------------
+alpha: 1"]
+	6173516176 -> 6173515984
+	6173516176 -> 6015513200 [dir=none]
+	6015513200 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173516176 -> 6015528288 [dir=none]
+	6015528288 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173516176 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173516320 -> 6173516176
+	6173516320 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6173516512 -> 6173516320
+	6173516512 [label=CloneBackward0]
+	6173516608 -> 6173516512
+	6173516608 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6173516656 -> 6173516608
+	6173516656 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6173516800 -> 6173516656
+	6173516800 -> 6173510688 [dir=none]
+	6173510688 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6173516800 -> 6173510608 [dir=none]
+	6173510608 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6173516800 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6173517088 -> 6173516800
+	6173517088 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6173517232 -> 6173517088
+	6173517232 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6173517328 -> 6173517232
+	6173517328 -> 6173511248 [dir=none]
+	6173511248 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6173517328 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6173517520 -> 6173517328
+	6173517520 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6173517616 -> 6173517520
+	6173517616 -> 6173511568 [dir=none]
+	6173511568 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6173517616 -> 6173532304 [dir=none]
+	6173532304 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6173517616 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6173517808 -> 6173517616
+	6173517808 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173517952 -> 6173517808
+	6173517952 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173518096 -> 6173517952
+	6173518096 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6173518144 -> 6173518096
+	6173518144 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173518288 -> 6173518144
+	6173518288 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173518432 -> 6173518288
+	6173518432 -> 6015514400 [dir=none]
+	6015514400 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173518432 -> 6015527328 [dir=none]
+	6015527328 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173518432 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173516128 -> 6173518432
+	6173516128 -> 6015527568 [dir=none]
+	6015527568 [label="bias
+ (768)" fillcolor=orange]
+	6173516128 -> 6015516560 [dir=none]
+	6015516560 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173516128 -> 6173533184 [dir=none]
+	6173533184 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6173516128 -> 6173532464 [dir=none]
+	6173532464 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6173516128 -> 6015527728 [dir=none]
+	6015527728 [label="weight
+ (768)" fillcolor=orange]
+	6173516128 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6173518864 -> 6173516128
+	6173518864 [label="AddBackward0
+------------
+alpha: 1"]
+	6173519056 -> 6173518864
+	6173519056 -> 6015515120 [dir=none]
+	6015515120 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6173519056 -> 6015527408 [dir=none]
+	6015527408 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6173519056 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173519200 -> 6173519056
+	6173519200 -> 6015516896 [dir=none]
+	6015516896 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6173519200 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6173519392 -> 6173519200
+	6173519392 -> 6015519536 [dir=none]
+	6015519536 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173519392 -> 6015527488 [dir=none]
+	6015527488 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6173519392 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173519008 -> 6173519392
+	6173519008 -> 6015527168 [dir=none]
+	6015527168 [label="bias
+ (768)" fillcolor=orange]
+	6173519008 -> 6015517856 [dir=none]
+	6015517856 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173519008 -> 6173533504 [dir=none]
+	6173533504 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6173519008 -> 6173533744 [dir=none]
+	6173533744 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6173519008 -> 6015527248 [dir=none]
+	6015527248 [label="weight
+ (768)" fillcolor=orange]
+	6173519008 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6173519680 -> 6173519008
+	6173519680 [label="AddBackward0
+------------
+alpha: 1"]
+	6173519824 -> 6173519680
+	6173519824 -> 6015514880 [dir=none]
+	6015514880 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173519824 -> 6015527008 [dir=none]
+	6015527008 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173519824 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173540560 -> 6173519824
+	6173540560 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6173540752 -> 6173540560
+	6173540752 [label=CloneBackward0]
+	6173540848 -> 6173540752
+	6173540848 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6173540896 -> 6173540848
+	6173540896 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6173541040 -> 6173540896
+	6173541040 -> 6173534384 [dir=none]
+	6173534384 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6173541040 -> 6173534304 [dir=none]
+	6173534304 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6173541040 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6173541328 -> 6173541040
+	6173541328 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6173541472 -> 6173541328
+	6173541472 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6173541568 -> 6173541472
+	6173541568 -> 6173534944 [dir=none]
+	6173534944 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6173541568 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6173541760 -> 6173541568
+	6173541760 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6173541856 -> 6173541760
+	6173541856 -> 6173535264 [dir=none]
+	6173535264 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6173541856 -> 6173535104 [dir=none]
+	6173535104 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6173541856 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6173542048 -> 6173541856
+	6173542048 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173542192 -> 6173542048
+	6173542192 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173542288 -> 6173542192
+	6173542288 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6173542336 -> 6173542288
+	6173542336 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173542480 -> 6173542336
+	6173542480 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173542624 -> 6173542480
+	6173542624 -> 6015519776 [dir=none]
+	6015519776 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173542624 -> 6015526528 [dir=none]
+	6015526528 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173542624 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173519776 -> 6173542624
+	6173519776 -> 6015526288 [dir=none]
+	6015526288 [label="bias
+ (768)" fillcolor=orange]
+	6173519776 -> 6015517376 [dir=none]
+	6015517376 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173519776 -> 6173552704 [dir=none]
+	6173552704 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6173519776 -> 6173552864 [dir=none]
+	6173552864 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6173519776 -> 6015526448 [dir=none]
+	6015526448 [label="weight
+ (768)" fillcolor=orange]
+	6173519776 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6173543056 -> 6173519776
+	6173543056 [label="AddBackward0
+------------
+alpha: 1"]
+	6173543248 -> 6173543056
+	6173543248 -> 6015518336 [dir=none]
+	6015518336 [label="input
+ (1, 50, 3072)" fillcolor=orange]
+	6173543248 -> 6015526048 [dir=none]
+	6015526048 [label="weight
+ (768, 3072)" fillcolor=orange]
+	6173543248 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173543392 -> 6173543248
+	6173543392 -> 6015518096 [dir=none]
+	6015518096 [label="self
+ (1, 50, 3072)" fillcolor=orange]
+	6173543392 [label="GeluBackward0
+---------------------------
+approximate:           none
+self       : [saved tensor]"]
+	6173543584 -> 6173543392
+	6173543584 -> 6015519056 [dir=none]
+	6015519056 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173543584 -> 6015526128 [dir=none]
+	6015526128 [label="weight
+ (3072, 768)" fillcolor=orange]
+	6173543584 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173543200 -> 6173543584
+	6173543200 -> 6015525808 [dir=none]
+	6015525808 [label="bias
+ (768)" fillcolor=orange]
+	6173543200 -> 6015520016 [dir=none]
+	6015520016 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173543200 -> 6173553104 [dir=none]
+	6173553104 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6173543200 -> 6173553344 [dir=none]
+	6173553344 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6173543200 -> 6015525968 [dir=none]
+	6015525968 [label="weight
+ (768)" fillcolor=orange]
+	6173543200 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6173543872 -> 6173543200
+	6173543872 [label="AddBackward0
+------------
+alpha: 1"]
+	6173544064 -> 6173543872
+	6173544064 -> 6015517136 [dir=none]
+	6015517136 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173544064 -> 6015525728 [dir=none]
+	6015525728 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173544064 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173544208 -> 6173544064
+	6173544208 [label="UnsafeViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 12, 64)"]
+	6173544400 -> 6173544208
+	6173544400 [label=CloneBackward0]
+	6173544304 -> 6173544400
+	6173544304 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	6173565088 -> 6173544304
+	6173565088 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 64)"]
+	6173565232 -> 6173565088
+	6173565232 -> 6173553984 [dir=none]
+	6173553984 [label="mat2
+ (12, 50, 64)" fillcolor=orange]
+	6173565232 -> 6173553904 [dir=none]
+	6173553904 [label="self
+ (12, 50, 50)" fillcolor=orange]
+	6173565232 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6173565520 -> 6173565232
+	6173565520 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6173565664 -> 6173565520
+	6173565664 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 50)"]
+	6173565760 -> 6173565664
+	6173565760 -> 6173554544 [dir=none]
+	6173554544 [label="result
+ (1, 12, 50, 50)" fillcolor=orange]
+	6173565760 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6173565952 -> 6173565760
+	6173565952 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (12, 50, 50)"]
+	6173566048 -> 6173565952
+	6173566048 -> 6173554864 [dir=none]
+	6173554864 [label="mat2
+ (12, 64, 50)" fillcolor=orange]
+	6173566048 -> 6173554704 [dir=none]
+	6173554704 [label="self
+ (12, 50, 64)" fillcolor=orange]
+	6173566048 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6173566240 -> 6173566048
+	6173566240 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173566384 -> 6173566240
+	6173566384 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173566480 -> 6173566384
+	6173566480 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6173566528 -> 6173566480
+	6173566528 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173566672 -> 6173566528
+	6173566672 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173566816 -> 6173566672
+	6173566816 -> 6015520256 [dir=none]
+	6015520256 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173566816 -> 6084007792 [dir=none]
+	6084007792 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173566816 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173544016 -> 6173566816
+	6173544016 -> 6084009072 [dir=none]
+	6084009072 [label="bias
+ (768)" fillcolor=orange]
+	6173544016 -> 6015518816 [dir=none]
+	6015518816 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173544016 -> 6173555904 [dir=none]
+	6173555904 [label="result1
+ (1, 50, 1)" fillcolor=orange]
+	6173544016 -> 6173555024 [dir=none]
+	6173555024 [label="result2
+ (1, 50, 1)" fillcolor=orange]
+	6173544016 -> 5171980784 [dir=none]
+	5171980784 [label="weight
+ (768)" fillcolor=orange]
+	6173544016 [label="NativeLayerNormBackward0
+--------------------------------
+bias            : [saved tensor]
+input           : [saved tensor]
+normalized_shape:         (768,)
+result1         : [saved tensor]
+result2         : [saved tensor]
+weight          : [saved tensor]"]
+	6173567248 -> 6173544016
+	6173567248 [label="AddBackward0
+------------
+alpha: 1"]
+	6173567440 -> 6173567248
+	6173567440 [label="AddBackward0
+------------
+alpha: 1"]
+	6173567584 -> 6173567440
+	6173567584 -> 5766073696 [dir=none]
+	5766073696 [label="indices
+ (1, 50)" fillcolor=orange]
+	6173567584 [label="EmbeddingBackward0
+------------------------------------
+indices             : [saved tensor]
+padding_idx         :              0
+scale_grad_by_freq  :          False
+sparse              :          False
+weight_sym_argsize_0:          30522"]
+	6173567728 -> 6173567584
+	6083767248 [label="bert.embeddings.word_embeddings.weight
+ (30522, 768)" fillcolor=lightblue]
+	6083767248 -> 6173567728
+	6173567728 [label=AccumulateGrad]
+	6173567536 -> 6173567440
+	6173567536 -> 6015517616 [dir=none]
+	6015517616 [label="indices
+ (1, 50)" fillcolor=orange]
+	6173567536 [label="EmbeddingBackward0
+------------------------------------------
+indices             :       [saved tensor]
+padding_idx         : 18446744073709551615
+scale_grad_by_freq  :                False
+sparse              :                False
+weight_sym_argsize_0:                    2"]
+	6173567824 -> 6173567536
+	6083767328 [label="bert.embeddings.token_type_embeddings.weight
+ (2, 768)" fillcolor=lightblue]
+	6083767328 -> 6173567824
+	6173567824 [label=AccumulateGrad]
+	6173567392 -> 6173567248
+	6173567392 -> 6015518576 [dir=none]
+	6015518576 [label="indices
+ (1, 50)" fillcolor=orange]
+	6173567392 [label="EmbeddingBackward0
+------------------------------------------
+indices             :       [saved tensor]
+padding_idx         : 18446744073709551615
+scale_grad_by_freq  :                False
+sparse              :                False
+weight_sym_argsize_0:                  512"]
+	6173567920 -> 6173567392
+	6083768128 [label="bert.embeddings.position_embeddings.weight
+ (512, 768)" fillcolor=lightblue]
+	6083768128 -> 6173567920
+	6173567920 [label=AccumulateGrad]
+	6173567200 -> 6173544016
+	5171980784 [label="bert.embeddings.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	5171980784 -> 6173567200
+	6173567200 [label=AccumulateGrad]
+	6173567152 -> 6173544016
+	6084009072 [label="bert.embeddings.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6084009072 -> 6173567152
+	6173567152 [label=AccumulateGrad]
+	6173567104 -> 6173566816
+	6084007792 [label="bert.encoder.layer.0.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6084007792 -> 6173567104
+	6173567104 [label=AccumulateGrad]
+	6173566960 -> 6173566816
+	6084008672 [label="bert.encoder.layer.0.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6084008672 -> 6173566960
+	6173566960 [label=AccumulateGrad]
+	6173566096 -> 6173566048
+	6173566096 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6173566288 -> 6173566096
+	6173566288 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6173566768 -> 6173566288
+	6173566768 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6173567296 -> 6173566768
+	6173567296 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6173567632 -> 6173567296
+	6173567632 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173567488 -> 6173567632
+	6173567488 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173568064 -> 6173567488
+	6173568064 -> 6015520256 [dir=none]
+	6015520256 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173568064 -> 6015525488 [dir=none]
+	6015525488 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173568064 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173544016 -> 6173568064
+	6173568160 -> 6173568064
+	6015525488 [label="bert.encoder.layer.0.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6015525488 -> 6173568160
+	6173568160 [label=AccumulateGrad]
+	6173568112 -> 6173568064
+	6084008912 [label="bert.encoder.layer.0.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6084008912 -> 6173568112
+	6173568112 [label=AccumulateGrad]
+	6173565376 -> 6173565232
+	6173565376 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173565808 -> 6173565376
+	6173565808 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173565568 -> 6173565808
+	6173565568 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173566624 -> 6173565568
+	6173566624 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173567872 -> 6173566624
+	6173567872 -> 6015520256 [dir=none]
+	6015520256 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173567872 -> 6015525568 [dir=none]
+	6015525568 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173567872 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173544016 -> 6173567872
+	6173568016 -> 6173567872
+	6015525568 [label="bert.encoder.layer.0.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6015525568 -> 6173568016
+	6173568016 [label=AccumulateGrad]
+	6173567680 -> 6173567872
+	6015525648 [label="bert.encoder.layer.0.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6015525648 -> 6173567680
+	6173567680 [label=AccumulateGrad]
+	6173544160 -> 6173544064
+	6015525728 [label="bert.encoder.layer.0.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6015525728 -> 6173544160
+	6173544160 [label=AccumulateGrad]
+	6173544112 -> 6173544064
+	6084008512 [label="bert.encoder.layer.0.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6084008512 -> 6173544112
+	6173544112 [label=AccumulateGrad]
+	6173544016 -> 6173543872
+	6173543824 -> 6173543200
+	6015525968 [label="bert.encoder.layer.0.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6015525968 -> 6173543824
+	6173543824 [label=AccumulateGrad]
+	6173543776 -> 6173543200
+	6015525808 [label="bert.encoder.layer.0.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6015525808 -> 6173543776
+	6173543776 [label=AccumulateGrad]
+	6173543728 -> 6173543584
+	6015526128 [label="bert.encoder.layer.0.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6015526128 -> 6173543728
+	6173543728 [label=AccumulateGrad]
+	6173543632 -> 6173543584
+	6015526208 [label="bert.encoder.layer.0.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6015526208 -> 6173543632
+	6173543632 [label=AccumulateGrad]
+	6173543344 -> 6173543248
+	6015526048 [label="bert.encoder.layer.0.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6015526048 -> 6173543344
+	6173543344 [label=AccumulateGrad]
+	6173543296 -> 6173543248
+	6015525888 [label="bert.encoder.layer.0.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6015525888 -> 6173543296
+	6173543296 [label=AccumulateGrad]
+	6173543200 -> 6173543056
+	6173543008 -> 6173519776
+	6015526448 [label="bert.encoder.layer.0.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6015526448 -> 6173543008
+	6173543008 [label=AccumulateGrad]
+	6173542960 -> 6173519776
+	6015526288 [label="bert.encoder.layer.0.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6015526288 -> 6173542960
+	6173542960 [label=AccumulateGrad]
+	6173542912 -> 6173542624
+	6015526528 [label="bert.encoder.layer.1.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6015526528 -> 6173542912
+	6173542912 [label=AccumulateGrad]
+	6173542768 -> 6173542624
+	6084008752 [label="bert.encoder.layer.1.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6084008752 -> 6173542768
+	6173542768 [label=AccumulateGrad]
+	6173541904 -> 6173541856
+	6173541904 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6173542096 -> 6173541904
+	6173542096 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6173542576 -> 6173542096
+	6173542576 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6173543104 -> 6173542576
+	6173543104 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6173543536 -> 6173543104
+	6173543536 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173543488 -> 6173543536
+	6173543488 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173544256 -> 6173543488
+	6173544256 -> 6015519776 [dir=none]
+	6015519776 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173544256 -> 6015525088 [dir=none]
+	6015525088 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173544256 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173519776 -> 6173544256
+	6173544352 -> 6173544256
+	6015525088 [label="bert.encoder.layer.1.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6015525088 -> 6173544352
+	6173544352 [label=AccumulateGrad]
+	6173542144 -> 6173544256
+	6015526768 [label="bert.encoder.layer.1.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6015526768 -> 6173542144
+	6173542144 [label=AccumulateGrad]
+	6173541184 -> 6173541040
+	6173541184 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173541616 -> 6173541184
+	6173541616 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173541376 -> 6173541616
+	6173541376 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173542432 -> 6173541376
+	6173542432 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173543440 -> 6173542432
+	6173543440 -> 6015519776 [dir=none]
+	6015519776 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173543440 -> 6015526848 [dir=none]
+	6015526848 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173543440 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173519776 -> 6173543440
+	6173543968 -> 6173543440
+	6015526848 [label="bert.encoder.layer.1.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6015526848 -> 6173543968
+	6173543968 [label=AccumulateGrad]
+	6173543152 -> 6173543440
+	6015526928 [label="bert.encoder.layer.1.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6015526928 -> 6173543152
+	6173543152 [label=AccumulateGrad]
+	6173540512 -> 6173519824
+	6015527008 [label="bert.encoder.layer.1.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6015527008 -> 6173540512
+	6173540512 [label=AccumulateGrad]
+	6173540464 -> 6173519824
+	6015527088 [label="bert.encoder.layer.1.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6015527088 -> 6173540464
+	6173540464 [label=AccumulateGrad]
+	6173519776 -> 6173519680
+	6173519632 -> 6173519008
+	6015527248 [label="bert.encoder.layer.1.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6015527248 -> 6173519632
+	6173519632 [label=AccumulateGrad]
+	6173519584 -> 6173519008
+	6015527168 [label="bert.encoder.layer.1.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6015527168 -> 6173519584
+	6173519584 [label=AccumulateGrad]
+	6173519536 -> 6173519392
+	6015527488 [label="bert.encoder.layer.1.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6015527488 -> 6173519536
+	6173519536 [label=AccumulateGrad]
+	6173519440 -> 6173519392
+	6015526688 [label="bert.encoder.layer.1.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6015526688 -> 6173519440
+	6173519440 [label=AccumulateGrad]
+	6173519152 -> 6173519056
+	6015527408 [label="bert.encoder.layer.1.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6015527408 -> 6173519152
+	6173519152 [label=AccumulateGrad]
+	6173519104 -> 6173519056
+	6015526608 [label="bert.encoder.layer.1.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6015526608 -> 6173519104
+	6173519104 [label=AccumulateGrad]
+	6173519008 -> 6173518864
+	6173518816 -> 6173516128
+	6015527728 [label="bert.encoder.layer.1.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6015527728 -> 6173518816
+	6173518816 [label=AccumulateGrad]
+	6173518768 -> 6173516128
+	6015527568 [label="bert.encoder.layer.1.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6015527568 -> 6173518768
+	6173518768 [label=AccumulateGrad]
+	6173518720 -> 6173518432
+	6015527328 [label="bert.encoder.layer.2.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6015527328 -> 6173518720
+	6173518720 [label=AccumulateGrad]
+	6173518576 -> 6173518432
+	6015527808 [label="bert.encoder.layer.2.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6015527808 -> 6173518576
+	6173518576 [label=AccumulateGrad]
+	6173517664 -> 6173517616
+	6173517664 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6173518000 -> 6173517664
+	6173518000 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6173518384 -> 6173518000
+	6173518384 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6173518912 -> 6173518384
+	6173518912 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6173519344 -> 6173518912
+	6173519344 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173519728 -> 6173519344
+	6173519728 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173517904 -> 6173519728
+	6173517904 -> 6015514400 [dir=none]
+	6015514400 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173517904 -> 6015525008 [dir=none]
+	6015525008 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173517904 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173516128 -> 6173517904
+	6173540800 -> 6173517904
+	6015525008 [label="bert.encoder.layer.2.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6015525008 -> 6173540800
+	6173540800 [label=AccumulateGrad]
+	6173540704 -> 6173517904
+	6015528048 [label="bert.encoder.layer.2.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6015528048 -> 6173540704
+	6173540704 [label=AccumulateGrad]
+	6173516944 -> 6173516800
+	6173516944 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173517376 -> 6173516944
+	6173517376 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6173517136 -> 6173517376
+	6173517136 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6173518240 -> 6173517136
+	6173518240 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173519248 -> 6173518240
+	6173519248 -> 6015514400 [dir=none]
+	6015514400 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173519248 -> 6015528128 [dir=none]
+	6015528128 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173519248 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6173516128 -> 6173519248
+	6173519296 -> 6173519248
+	6015528128 [label="bert.encoder.layer.2.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6015528128 -> 6173519296
+	6173519296 [label=AccumulateGrad]
+	6173518960 -> 6173519248
+	6015528208 [label="bert.encoder.layer.2.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6015528208 -> 6173518960
+	6173518960 [label=AccumulateGrad]
+	6173516272 -> 6173516176
+	6015528288 [label="bert.encoder.layer.2.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6015528288 -> 6173516272
+	6173516272 [label=AccumulateGrad]
+	6173516224 -> 6173516176
+	6015528368 [label="bert.encoder.layer.2.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6015528368 -> 6173516224
+	6173516224 [label=AccumulateGrad]
+	6173516128 -> 6173515984
+	6173515936 -> 6084095472
+	6015528528 [label="bert.encoder.layer.2.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6015528528 -> 6173515936
+	6173515936 [label=AccumulateGrad]
+	6173515888 -> 6084095472
+	6015528448 [label="bert.encoder.layer.2.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6015528448 -> 6173515888
+	6173515888 [label=AccumulateGrad]
+	6084095904 -> 6084095856
+	6015528768 [label="bert.encoder.layer.2.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6015528768 -> 6084095904
+	6084095904 [label=AccumulateGrad]
+	6084095760 -> 6084095856
+	6015527968 [label="bert.encoder.layer.2.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6015527968 -> 6084095760
+	6084095760 [label=AccumulateGrad]
+	6084095616 -> 6084095520
+	6015528688 [label="bert.encoder.layer.2.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6015528688 -> 6084095616
+	6084095616 [label=AccumulateGrad]
+	6084095568 -> 6084095520
+	6015527888 [label="bert.encoder.layer.2.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6015527888 -> 6084095568
+	6084095568 [label=AccumulateGrad]
+	6084095472 -> 6084095328
+	6084095280 -> 6084092640
+	6035710096 [label="bert.encoder.layer.2.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035710096 -> 6084095280
+	6084095280 [label=AccumulateGrad]
+	6084095232 -> 6084092640
+	6015528848 [label="bert.encoder.layer.2.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6015528848 -> 6084095232
+	6084095232 [label=AccumulateGrad]
+	6084095184 -> 6084094896
+	6015528608 [label="bert.encoder.layer.3.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6015528608 -> 6084095184
+	6084095184 [label=AccumulateGrad]
+	6084095040 -> 6084094896
+	6015526368 [label="bert.encoder.layer.3.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6015526368 -> 6084095040
+	6084095040 [label=AccumulateGrad]
+	6084094176 -> 6084094128
+	6084094176 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084094368 -> 6084094176
+	6084094368 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084094848 -> 6084094368
+	6084094848 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084095376 -> 6084094848
+	6084095376 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084095808 -> 6084095376
+	6084095808 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084094416 -> 6084095808
+	6084094416 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173516368 -> 6084094416
+	6173516368 -> 6015515840 [dir=none]
+	6015515840 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173516368 -> 6015525168 [dir=none]
+	6015525168 [label="weight
+ (768, 768)" fillcolor=orange]
+	6173516368 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084092640 -> 6173516368
+	6173516560 -> 6173516368
+	6015525168 [label="bert.encoder.layer.3.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6015525168 -> 6173516560
+	6173516560 [label=AccumulateGrad]
+	6173516464 -> 6173516368
+	6035710416 [label="bert.encoder.layer.3.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6035710416 -> 6173516464
+	6173516464 [label=AccumulateGrad]
+	6084093456 -> 6084093312
+	6084093456 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084093888 -> 6084093456
+	6084093888 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084093648 -> 6084093888
+	6084093648 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084094704 -> 6084093648
+	6084094704 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084095712 -> 6084094704
+	6084095712 -> 6015515840 [dir=none]
+	6015515840 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084095712 -> 6035710496 [dir=none]
+	6035710496 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084095712 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084092640 -> 6084095712
+	6084095424 -> 6084095712
+	6035710496 [label="bert.encoder.layer.3.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6035710496 -> 6084095424
+	6084095424 [label=AccumulateGrad]
+	6084093696 -> 6084095712
+	6035710576 [label="bert.encoder.layer.3.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6035710576 -> 6084093696
+	6084093696 [label=AccumulateGrad]
+	6084092784 -> 6084092688
+	6035710656 [label="bert.encoder.layer.3.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6035710656 -> 6084092784
+	6084092784 [label=AccumulateGrad]
+	6084092736 -> 6084092688
+	6035710736 [label="bert.encoder.layer.3.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6035710736 -> 6084092736
+	6084092736 [label=AccumulateGrad]
+	6084092640 -> 6084092496
+	6084092448 -> 6083878768
+	6035710896 [label="bert.encoder.layer.3.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035710896 -> 6084092448
+	6084092448 [label=AccumulateGrad]
+	6084092400 -> 6083878768
+	6035710816 [label="bert.encoder.layer.3.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6035710816 -> 6084092400
+	6084092400 [label=AccumulateGrad]
+	6084092352 -> 6084092208
+	6035711136 [label="bert.encoder.layer.3.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6035711136 -> 6084092352
+	6084092352 [label=AccumulateGrad]
+	6084092256 -> 6084092208
+	6035710176 [label="bert.encoder.layer.3.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6035710176 -> 6084092256
+	6084092256 [label=AccumulateGrad]
+	6084092016 -> 6083878816
+	6035711056 [label="bert.encoder.layer.3.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6035711056 -> 6084092016
+	6084092016 [label=AccumulateGrad]
+	6084091968 -> 6083878816
+	6035710336 [label="bert.encoder.layer.3.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6035710336 -> 6084091968
+	6084091968 [label=AccumulateGrad]
+	6083878768 -> 6083878624
+	6083878576 -> 6083875936
+	6035711376 [label="bert.encoder.layer.3.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035711376 -> 6083878576
+	6083878576 [label=AccumulateGrad]
+	6083878528 -> 6083875936
+	6035711216 [label="bert.encoder.layer.3.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6035711216 -> 6083878528
+	6083878528 [label=AccumulateGrad]
+	6083878480 -> 6083878192
+	6035710976 [label="bert.encoder.layer.4.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6035710976 -> 6083878480
+	6083878480 [label=AccumulateGrad]
+	6083878336 -> 6083878192
+	6035711456 [label="bert.encoder.layer.4.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6035711456 -> 6083878336
+	6083878336 [label=AccumulateGrad]
+	6083877472 -> 6083877424
+	6083877472 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083877664 -> 6083877472
+	6083877664 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083878144 -> 6083877664
+	6083878144 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6083878672 -> 6083878144
+	6083878672 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6083878720 -> 6083878672
+	6083878720 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084092112 -> 6083878720
+	6084092112 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084092880 -> 6084092112
+	6084092880 -> 6015506368 [dir=none]
+	6015506368 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084092880 -> 6035710256 [dir=none]
+	6035710256 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084092880 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083875936 -> 6084092880
+	6084093072 -> 6084092880
+	6035710256 [label="bert.encoder.layer.4.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6035710256 -> 6084093072
+	6084093072 [label=AccumulateGrad]
+	6084092976 -> 6084092880
+	6035711696 [label="bert.encoder.layer.4.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6035711696 -> 6084092976
+	6084092976 [label=AccumulateGrad]
+	6083876752 -> 6083876608
+	6083876752 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083877184 -> 6083876752
+	6083877184 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083876944 -> 6083877184
+	6083876944 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083878000 -> 6083876944
+	6083878000 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083877712 -> 6083878000
+	6083877712 -> 6015506368 [dir=none]
+	6015506368 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083877712 -> 6035711776 [dir=none]
+	6035711776 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083877712 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083875936 -> 6083877712
+	6083876992 -> 6083877712
+	6035711776 [label="bert.encoder.layer.4.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6035711776 -> 6083876992
+	6083876992 [label=AccumulateGrad]
+	6084092592 -> 6083877712
+	6035711856 [label="bert.encoder.layer.4.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6035711856 -> 6084092592
+	6084092592 [label=AccumulateGrad]
+	6083876080 -> 6083875984
+	6035711936 [label="bert.encoder.layer.4.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6035711936 -> 6083876080
+	6083876080 [label=AccumulateGrad]
+	6083876032 -> 6083875984
+	6035712016 [label="bert.encoder.layer.4.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6035712016 -> 6083876032
+	6083876032 [label=AccumulateGrad]
+	6083875936 -> 6083875792
+	6083875744 -> 6083875120
+	6035712176 [label="bert.encoder.layer.4.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035712176 -> 6083875744
+	6083875744 [label=AccumulateGrad]
+	6083875696 -> 6083875120
+	6035712096 [label="bert.encoder.layer.4.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6035712096 -> 6083875696
+	6083875696 [label=AccumulateGrad]
+	6083875648 -> 6083875504
+	6035712416 [label="bert.encoder.layer.4.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6035712416 -> 6083875648
+	6083875648 [label=AccumulateGrad]
+	6083875552 -> 6083875504
+	6035711616 [label="bert.encoder.layer.4.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6035711616 -> 6083875552
+	6083875552 [label=AccumulateGrad]
+	6083875264 -> 6083875168
+	6035712336 [label="bert.encoder.layer.4.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6035712336 -> 6083875264
+	6083875264 [label=AccumulateGrad]
+	6083875216 -> 6083875168
+	6035711536 [label="bert.encoder.layer.4.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6035711536 -> 6083875216
+	6083875216 [label=AccumulateGrad]
+	6083875120 -> 6083874976
+	6083874928 -> 6084040160
+	6035712656 [label="bert.encoder.layer.4.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035712656 -> 6083874928
+	6083874928 [label=AccumulateGrad]
+	6083874880 -> 6084040160
+	6035712496 [label="bert.encoder.layer.4.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6035712496 -> 6083874880
+	6083874880 [label=AccumulateGrad]
+	6084042704 -> 6084042416
+	6035712256 [label="bert.encoder.layer.5.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6035712256 -> 6084042704
+	6084042704 [label=AccumulateGrad]
+	6084042560 -> 6084042416
+	6035712736 [label="bert.encoder.layer.5.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6035712736 -> 6084042560
+	6084042560 [label=AccumulateGrad]
+	6084041696 -> 6084041648
+	6084041696 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084041888 -> 6084041696
+	6084041888 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084042368 -> 6084041888
+	6084042368 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084042512 -> 6084042368
+	6084042512 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6083875456 -> 6084042512
+	6083875456 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083875408 -> 6083875456
+	6083875408 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083876176 -> 6083875408
+	6083876176 -> 6015507808 [dir=none]
+	6015507808 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083876176 -> 6035710016 [dir=none]
+	6035710016 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083876176 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084040160 -> 6083876176
+	6083876368 -> 6083876176
+	6035710016 [label="bert.encoder.layer.5.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6035710016 -> 6083876368
+	6083876368 [label=AccumulateGrad]
+	6083876272 -> 6083876176
+	6035712976 [label="bert.encoder.layer.5.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6035712976 -> 6083876272
+	6083876272 [label=AccumulateGrad]
+	6084040976 -> 6084040832
+	6084040976 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084041408 -> 6084040976
+	6084041408 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084041168 -> 6084041408
+	6084041168 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084042224 -> 6084041168
+	6084042224 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084041936 -> 6084042224
+	6084041936 -> 6015507808 [dir=none]
+	6015507808 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084041936 -> 6035713056 [dir=none]
+	6035713056 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084041936 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084040160 -> 6084041936
+	6083875888 -> 6084041936
+	6035713056 [label="bert.encoder.layer.5.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6035713056 -> 6083875888
+	6083875888 [label=AccumulateGrad]
+	6083875072 -> 6084041936
+	6035713136 [label="bert.encoder.layer.5.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6035713136 -> 6083875072
+	6083875072 [label=AccumulateGrad]
+	6084040304 -> 6084040208
+	6035713216 [label="bert.encoder.layer.5.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6035713216 -> 6084040304
+	6084040304 [label=AccumulateGrad]
+	6084040256 -> 6084040208
+	6035713296 [label="bert.encoder.layer.5.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6035713296 -> 6084040256
+	6084040256 [label=AccumulateGrad]
+	6084040160 -> 6084040016
+	6084039968 -> 6084039344
+	6035713456 [label="bert.encoder.layer.5.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035713456 -> 6084039968
+	6084039968 [label=AccumulateGrad]
+	6084039920 -> 6084039344
+	6035713376 [label="bert.encoder.layer.5.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6035713376 -> 6084039920
+	6084039920 [label=AccumulateGrad]
+	6084039872 -> 6084039728
+	6035713696 [label="bert.encoder.layer.5.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6035713696 -> 6084039872
+	6084039872 [label=AccumulateGrad]
+	6084039776 -> 6084039728
+	6035712896 [label="bert.encoder.layer.5.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6035712896 -> 6084039776
+	6084039776 [label=AccumulateGrad]
+	6084039488 -> 6084039392
+	6035713616 [label="bert.encoder.layer.5.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6035713616 -> 6084039488
+	6084039488 [label=AccumulateGrad]
+	6084039440 -> 6084039392
+	6035712816 [label="bert.encoder.layer.5.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6035712816 -> 6084039440
+	6084039440 [label=AccumulateGrad]
+	6084039344 -> 6084039200
+	6084039152 -> 6084036448
+	6035713936 [label="bert.encoder.layer.5.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6035713936 -> 6084039152
+	6084039152 [label=AccumulateGrad]
+	6084039104 -> 6084036448
+	6035713776 [label="bert.encoder.layer.5.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6035713776 -> 6084039104
+	6084039104 [label=AccumulateGrad]
+	6084039056 -> 6084038768
+	6035713536 [label="bert.encoder.layer.6.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6035713536 -> 6084039056
+	6084039056 [label=AccumulateGrad]
+	6084038912 -> 6084038768
+	6035713856 [label="bert.encoder.layer.6.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6035713856 -> 6084038912
+	6084038912 [label=AccumulateGrad]
+	6084037984 -> 6084037936
+	6084037984 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084038176 -> 6084037984
+	6084038176 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084038512 -> 6084038176
+	6084038512 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084039248 -> 6084038512
+	6084039248 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084039680 -> 6084039248
+	6084039680 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084039632 -> 6084039680
+	6084039632 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084040400 -> 6084039632
+	6084040400 -> 6015502432 [dir=none]
+	6015502432 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084040400 -> 6035712576 [dir=none]
+	6035712576 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084040400 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084036448 -> 6084040400
+	6084040592 -> 6084040400
+	6035712576 [label="bert.encoder.layer.6.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6035712576 -> 6084040592
+	6084040592 [label=AccumulateGrad]
+	6084040496 -> 6084040400
+	6083150128 [label="bert.encoder.layer.6.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6083150128 -> 6084040496
+	6084040496 [label=AccumulateGrad]
+	6084037264 -> 6084037120
+	6084037264 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084037696 -> 6084037264
+	6084037696 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084037456 -> 6084037696
+	6084037456 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084038224 -> 6084037456
+	6084038224 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084037504 -> 6084038224
+	6084037504 -> 6015502432 [dir=none]
+	6015502432 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084037504 -> 6083150208 [dir=none]
+	6083150208 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084037504 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084036448 -> 6084037504
+	6084040112 -> 6084037504
+	6083150208 [label="bert.encoder.layer.6.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6083150208 -> 6084040112
+	6084040112 [label=AccumulateGrad]
+	6084039296 -> 6084037504
+	6083150288 [label="bert.encoder.layer.6.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6083150288 -> 6084039296
+	6084039296 [label=AccumulateGrad]
+	6084036592 -> 6084036496
+	6083150368 [label="bert.encoder.layer.6.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6083150368 -> 6084036592
+	6084036592 [label=AccumulateGrad]
+	6084036544 -> 6084036496
+	6083150448 [label="bert.encoder.layer.6.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083150448 -> 6084036544
+	6084036544 [label=AccumulateGrad]
+	6084036448 -> 6084036304
+	6084036256 -> 6084035632
+	6083150608 [label="bert.encoder.layer.6.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083150608 -> 6084036256
+	6084036256 [label=AccumulateGrad]
+	6084036208 -> 6084035632
+	6083150528 [label="bert.encoder.layer.6.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083150528 -> 6084036208
+	6084036208 [label=AccumulateGrad]
+	6084036160 -> 6084036016
+	6083150848 [label="bert.encoder.layer.6.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6083150848 -> 6084036160
+	6084036160 [label=AccumulateGrad]
+	6084036064 -> 6084036016
+	6083149888 [label="bert.encoder.layer.6.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6083149888 -> 6084036064
+	6084036064 [label=AccumulateGrad]
+	6084035776 -> 6084035680
+	6083150768 [label="bert.encoder.layer.6.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6083150768 -> 6084035776
+	6084035776 [label=AccumulateGrad]
+	6084035728 -> 6084035680
+	6083150048 [label="bert.encoder.layer.6.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083150048 -> 6084035728
+	6084035728 [label=AccumulateGrad]
+	6084035632 -> 6084035488
+	6084035440 -> 6083930336
+	6083151088 [label="bert.encoder.layer.6.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083151088 -> 6084035440
+	6084035440 [label=AccumulateGrad]
+	6084035392 -> 6083930336
+	6083150928 [label="bert.encoder.layer.6.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083150928 -> 6084035392
+	6084035392 [label=AccumulateGrad]
+	6084035344 -> 6084035056
+	6083150688 [label="bert.encoder.layer.7.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6083150688 -> 6084035344
+	6084035344 [label=AccumulateGrad]
+	6084035200 -> 6084035056
+	6083151168 [label="bert.encoder.layer.7.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6083151168 -> 6084035200
+	6084035200 [label=AccumulateGrad]
+	6083931872 -> 6083931824
+	6083931872 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083932064 -> 6083931872
+	6083932064 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084035008 -> 6083932064
+	6084035008 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084035536 -> 6084035008
+	6084035536 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084035968 -> 6084035536
+	6084035968 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084035920 -> 6084035968
+	6084035920 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084036688 -> 6084035920
+	6084036688 -> 6015503872 [dir=none]
+	6015503872 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084036688 -> 6083149968 [dir=none]
+	6083149968 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084036688 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083930336 -> 6084036688
+	6084036880 -> 6084036688
+	6083149968 [label="bert.encoder.layer.7.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6083149968 -> 6084036880
+	6084036880 [label=AccumulateGrad]
+	6084036784 -> 6084036688
+	6083151408 [label="bert.encoder.layer.7.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6083151408 -> 6084036784
+	6084036784 [label=AccumulateGrad]
+	6083931152 -> 6083931008
+	6083931152 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083931584 -> 6083931152
+	6083931584 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083931344 -> 6083931584
+	6083931344 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083931392 -> 6083931344
+	6083931392 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084035872 -> 6083931392
+	6084035872 -> 6015503872 [dir=none]
+	6015503872 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084035872 -> 6083151488 [dir=none]
+	6083151488 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084035872 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083930336 -> 6084035872
+	6084036400 -> 6084035872
+	6083151488 [label="bert.encoder.layer.7.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6083151488 -> 6084036400
+	6084036400 [label=AccumulateGrad]
+	6084035584 -> 6084035872
+	6083151568 [label="bert.encoder.layer.7.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6083151568 -> 6084035584
+	6084035584 [label=AccumulateGrad]
+	6083930480 -> 6083930384
+	6083151648 [label="bert.encoder.layer.7.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6083151648 -> 6083930480
+	6083930480 [label=AccumulateGrad]
+	6083930432 -> 6083930384
+	6083151728 [label="bert.encoder.layer.7.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083151728 -> 6083930432
+	6083930432 [label=AccumulateGrad]
+	6083930336 -> 6083930192
+	6083930144 -> 6083929520
+	6083151888 [label="bert.encoder.layer.7.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083151888 -> 6083930144
+	6083930144 [label=AccumulateGrad]
+	6083930096 -> 6083929520
+	6083151808 [label="bert.encoder.layer.7.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083151808 -> 6083930096
+	6083930096 [label=AccumulateGrad]
+	6083930048 -> 6083929904
+	6083152128 [label="bert.encoder.layer.7.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6083152128 -> 6083930048
+	6083930048 [label=AccumulateGrad]
+	6083929952 -> 6083929904
+	6083151328 [label="bert.encoder.layer.7.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6083151328 -> 6083929952
+	6083929952 [label=AccumulateGrad]
+	6083929664 -> 6083929568
+	6083152048 [label="bert.encoder.layer.7.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6083152048 -> 6083929664
+	6083929664 [label=AccumulateGrad]
+	6083929616 -> 6083929568
+	6083151248 [label="bert.encoder.layer.7.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083151248 -> 6083929616
+	6083929616 [label=AccumulateGrad]
+	6083929520 -> 6083929376
+	6083929328 -> 6084074080
+	6083152368 [label="bert.encoder.layer.7.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083152368 -> 6083929328
+	6083929328 [label=AccumulateGrad]
+	6083929280 -> 6084074080
+	6083152208 [label="bert.encoder.layer.7.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083152208 -> 6083929280
+	6083929280 [label=AccumulateGrad]
+	6083929232 -> 6083928944
+	6083151968 [label="bert.encoder.layer.8.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6083151968 -> 6083929232
+	6083929232 [label=AccumulateGrad]
+	6083929088 -> 6083928944
+	6083152448 [label="bert.encoder.layer.8.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6083152448 -> 6083929088
+	6083929088 [label=AccumulateGrad]
+	6083928224 -> 6084075088
+	6083928224 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083928416 -> 6083928224
+	6083928416 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083928896 -> 6083928416
+	6083928896 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6083929424 -> 6083928896
+	6083929424 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6083929856 -> 6083929424
+	6083929856 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083929808 -> 6083929856
+	6083929808 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083930576 -> 6083929808
+	6083930576 -> 6015498496 [dir=none]
+	6015498496 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083930576 -> 6083151008 [dir=none]
+	6083151008 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083930576 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084074080 -> 6083930576
+	6083930768 -> 6083930576
+	6083151008 [label="bert.encoder.layer.8.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6083151008 -> 6083930768
+	6083930768 [label=AccumulateGrad]
+	6083930672 -> 6083930576
+	6083152688 [label="bert.encoder.layer.8.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6083152688 -> 6083930672
+	6083930672 [label=AccumulateGrad]
+	6084074896 -> 6084074752
+	6084074896 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084075328 -> 6084074896
+	6084075328 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084075136 -> 6084075328
+	6084075136 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083928752 -> 6084075136
+	6083928752 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083929760 -> 6083928752
+	6083929760 -> 6015498496 [dir=none]
+	6015498496 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083929760 -> 6083152768 [dir=none]
+	6083152768 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083929760 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084074080 -> 6083929760
+	6083930288 -> 6083929760
+	6083152768 [label="bert.encoder.layer.8.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6083152768 -> 6083930288
+	6083930288 [label=AccumulateGrad]
+	6083929472 -> 6083929760
+	6083152848 [label="bert.encoder.layer.8.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6083152848 -> 6083929472
+	6083929472 [label=AccumulateGrad]
+	6084074224 -> 6084074128
+	6083152928 [label="bert.encoder.layer.8.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6083152928 -> 6084074224
+	6084074224 [label=AccumulateGrad]
+	6084074176 -> 6084074128
+	6083153008 [label="bert.encoder.layer.8.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083153008 -> 6084074176
+	6084074176 [label=AccumulateGrad]
+	6084074080 -> 6084073936
+	6084073888 -> 6084073264
+	6083153168 [label="bert.encoder.layer.8.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083153168 -> 6084073888
+	6084073888 [label=AccumulateGrad]
+	6084073840 -> 6084073264
+	6083153088 [label="bert.encoder.layer.8.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083153088 -> 6084073840
+	6084073840 [label=AccumulateGrad]
+	6084073792 -> 6084073648
+	6083153408 [label="bert.encoder.layer.8.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6083153408 -> 6084073792
+	6084073792 [label=AccumulateGrad]
+	6084073696 -> 6084073648
+	6083152608 [label="bert.encoder.layer.8.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6083152608 -> 6084073696
+	6084073696 [label=AccumulateGrad]
+	6084073408 -> 6084073312
+	6083153328 [label="bert.encoder.layer.8.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6083153328 -> 6084073408
+	6084073408 [label=AccumulateGrad]
+	6084073360 -> 6084073312
+	6083152528 [label="bert.encoder.layer.8.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083152528 -> 6084073360
+	6084073360 [label=AccumulateGrad]
+	6084073264 -> 6084073120
+	6084073072 -> 6084087232
+	6083153648 [label="bert.encoder.layer.8.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083153648 -> 6084073072
+	6084073072 [label=AccumulateGrad]
+	6084073024 -> 6084087232
+	6083153488 [label="bert.encoder.layer.8.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083153488 -> 6084073024
+	6084073024 [label=AccumulateGrad]
+	6084072976 -> 6084072784
+	6083153248 [label="bert.encoder.layer.9.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6083153248 -> 6084072976
+	6084072976 [label=AccumulateGrad]
+	6084072832 -> 6084072784
+	6083153728 [label="bert.encoder.layer.9.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6083153728 -> 6084072832
+	6084072832 [label=AccumulateGrad]
+	6084072208 -> 6084072160
+	6084072208 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084072544 -> 6084072208
+	6084072544 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084072736 -> 6084072544
+	6084072736 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084073168 -> 6084072736
+	6084073168 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084073600 -> 6084073168
+	6084073600 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084073552 -> 6084073600
+	6084073552 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084074320 -> 6084073552
+	6084074320 -> 6015499936 [dir=none]
+	6015499936 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084074320 -> 6083152288 [dir=none]
+	6083152288 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084074320 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084087232 -> 6084074320
+	6084074512 -> 6084074320
+	6083152288 [label="bert.encoder.layer.9.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6083152288 -> 6084074512
+	6084074512 [label=AccumulateGrad]
+	6084074416 -> 6084074320
+	6083395728 [label="bert.encoder.layer.9.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6083395728 -> 6084074416
+	6084074416 [label=AccumulateGrad]
+	6084071680 -> 6084071584
+	6084071680 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084072016 -> 6084071680
+	6084072016 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084071776 -> 6084072016
+	6084071776 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084072640 -> 6084071776
+	6084072640 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084073504 -> 6084072640
+	6084073504 -> 6015499936 [dir=none]
+	6015499936 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084073504 -> 6083395808 [dir=none]
+	6083395808 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084073504 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084087232 -> 6084073504
+	6084074032 -> 6084073504
+	6083395808 [label="bert.encoder.layer.9.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6083395808 -> 6084074032
+	6084074032 [label=AccumulateGrad]
+	6084073216 -> 6084073504
+	6083395888 [label="bert.encoder.layer.9.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6083395888 -> 6084073216
+	6084073216 [label=AccumulateGrad]
+	6084087376 -> 6084087280
+	6083395968 [label="bert.encoder.layer.9.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6083395968 -> 6084087376
+	6084087376 [label=AccumulateGrad]
+	6084087328 -> 6084087280
+	6083396048 [label="bert.encoder.layer.9.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083396048 -> 6084087328
+	6084087328 [label=AccumulateGrad]
+	6084087232 -> 6084087088
+	6084087040 -> 6084086464
+	6083396208 [label="bert.encoder.layer.9.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083396208 -> 6084087040
+	6084087040 [label=AccumulateGrad]
+	6084086992 -> 6084086464
+	6083396128 [label="bert.encoder.layer.9.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083396128 -> 6084086992
+	6084086992 [label=AccumulateGrad]
+	6084086944 -> 6084086848
+	6083396448 [label="bert.encoder.layer.9.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6083396448 -> 6084086944
+	6084086944 [label=AccumulateGrad]
+	6084086896 -> 6084086848
+	6083395648 [label="bert.encoder.layer.9.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6083395648 -> 6084086896
+	6084086896 [label=AccumulateGrad]
+	6084086608 -> 6084086512
+	6083396368 [label="bert.encoder.layer.9.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6083396368 -> 6084086608
+	6084086608 [label=AccumulateGrad]
+	6084086560 -> 6084086512
+	6083396528 [label="bert.encoder.layer.9.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083396528 -> 6084086560
+	6084086560 [label=AccumulateGrad]
+	6084086464 -> 6084086320
+	6084086272 -> 6084084256
+	6083396688 [label="bert.encoder.layer.9.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083396688 -> 6084086272
+	6084086272 [label=AccumulateGrad]
+	6084086224 -> 6084084256
+	6083396608 [label="bert.encoder.layer.9.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083396608 -> 6084086224
+	6084086224 [label=AccumulateGrad]
+	6084086176 -> 6084086080
+	6083396768 [label="bert.encoder.layer.10.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6083396768 -> 6084086176
+	6084086176 [label=AccumulateGrad]
+	6084086128 -> 6084086080
+	6083396848 [label="bert.encoder.layer.10.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6083396848 -> 6084086128
+	6084086128 [label=AccumulateGrad]
+	6084085504 -> 6084085456
+	6084085504 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084085840 -> 6084085504
+	6084085840 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6084086032 -> 6084085840
+	6084086032 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6084086368 -> 6084086032
+	6084086368 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084086800 -> 6084086368
+	6084086800 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084086752 -> 6084086800
+	6084086752 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084087472 -> 6084086752
+	6084087472 -> 6015494560 [dir=none]
+	6015494560 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084087472 -> 6083396928 [dir=none]
+	6083396928 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084087472 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084084256 -> 6084087472
+	6084087664 -> 6084087472
+	6083396928 [label="bert.encoder.layer.10.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6083396928 -> 6084087664
+	6084087664 [label=AccumulateGrad]
+	6084087568 -> 6084087472
+	6083397008 [label="bert.encoder.layer.10.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6083397008 -> 6084087568
+	6084087568 [label=AccumulateGrad]
+	6084084976 -> 6084084928
+	6084084976 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084085312 -> 6084084976
+	6084085312 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6084085072 -> 6084085312
+	6084085072 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084085936 -> 6084085072
+	6084085936 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084086704 -> 6084085936
+	6084086704 -> 6015494560 [dir=none]
+	6015494560 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084086704 -> 6083397088 [dir=none]
+	6083397088 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084086704 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084084256 -> 6084086704
+	6084087184 -> 6084086704
+	6083397088 [label="bert.encoder.layer.10.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6083397088 -> 6084087184
+	6084087184 [label=AccumulateGrad]
+	6084086416 -> 6084086704
+	6083397168 [label="bert.encoder.layer.10.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6083397168 -> 6084086416
+	6084086416 [label=AccumulateGrad]
+	6084084400 -> 6084084304
+	6083397248 [label="bert.encoder.layer.10.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6083397248 -> 6084084400
+	6084084400 [label=AccumulateGrad]
+	6084084352 -> 6084084304
+	6083397328 [label="bert.encoder.layer.10.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083397328 -> 6084084352
+	6084084352 [label=AccumulateGrad]
+	6084084256 -> 6084084112
+	6084084064 -> 6083976928
+	6083397488 [label="bert.encoder.layer.10.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083397488 -> 6084084064
+	6084084064 [label=AccumulateGrad]
+	6084084016 -> 6083976928
+	6083397408 [label="bert.encoder.layer.10.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083397408 -> 6084084016
+	6084084016 [label=AccumulateGrad]
+	6084083968 -> 6084083776
+	6083397648 [label="bert.encoder.layer.10.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6083397648 -> 6084083968
+	6084083968 [label=AccumulateGrad]
+	6084083920 -> 6084083776
+	6083397728 [label="bert.encoder.layer.10.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6083397728 -> 6084083920
+	6084083920 [label=AccumulateGrad]
+	6083977072 -> 6083976976
+	6083397568 [label="bert.encoder.layer.10.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6083397568 -> 6083977072
+	6083977072 [label=AccumulateGrad]
+	6083977024 -> 6083976976
+	6083397808 [label="bert.encoder.layer.10.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083397808 -> 6083977024
+	6083977024 [label=AccumulateGrad]
+	6083976928 -> 6083976784
+	6083976736 -> 6083974672
+	6083397968 [label="bert.encoder.layer.10.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083397968 -> 6083976736
+	6083976736 [label=AccumulateGrad]
+	6083976688 -> 6083974672
+	6083397888 [label="bert.encoder.layer.10.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083397888 -> 6083976688
+	6083976688 [label=AccumulateGrad]
+	6083976640 -> 6083976544
+	6083398048 [label="bert.encoder.layer.11.attention.self.query.weight
+ (768, 768)" fillcolor=lightblue]
+	6083398048 -> 6083976640
+	6083976640 [label=AccumulateGrad]
+	6083976592 -> 6083976544
+	6083398128 [label="bert.encoder.layer.11.attention.self.query.bias
+ (768)" fillcolor=lightblue]
+	6083398128 -> 6083976592
+	6083976592 [label=AccumulateGrad]
+	6083975968 -> 6083975920
+	6083975968 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083976304 -> 6083975968
+	6083976304 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 64, 50)"]
+	6083976496 -> 6083976304
+	6083976496 [label="MulBackward1
+-------------------------
+other: 0.3535533905932738"]
+	6083976832 -> 6083976496
+	6083976832 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6083976880 -> 6083976832
+	6083976880 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6084083872 -> 6083976880
+	6084083872 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084084496 -> 6084083872
+	6084084496 -> 6015496000 [dir=none]
+	6015496000 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084084496 -> 6083398208 [dir=none]
+	6083398208 [label="weight
+ (768, 768)" fillcolor=orange]
+	6084084496 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974672 -> 6084084496
+	6084084688 -> 6084084496
+	6083398208 [label="bert.encoder.layer.11.attention.self.key.weight
+ (768, 768)" fillcolor=lightblue]
+	6083398208 -> 6084084688
+	6084084688 [label=AccumulateGrad]
+	6084084592 -> 6084084496
+	6083398288 [label="bert.encoder.layer.11.attention.self.key.bias
+ (768)" fillcolor=lightblue]
+	6083398288 -> 6084084592
+	6084084592 [label=AccumulateGrad]
+	6083975392 -> 6083975344
+	6083975392 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083975776 -> 6083975392
+	6083975776 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (1, 12, 50, 64)"]
+	6083975488 -> 6083975776
+	6083975488 [label="PermuteBackward0
+------------------
+dims: (0, 2, 1, 3)"]
+	6083976400 -> 6083975488
+	6083976400 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6083977168 -> 6083976400
+	6083977168 -> 6015496000 [dir=none]
+	6015496000 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083977168 -> 6083398368 [dir=none]
+	6083398368 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083977168 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974672 -> 6083977168
+	6083976112 -> 6083977168
+	6083398368 [label="bert.encoder.layer.11.attention.self.value.weight
+ (768, 768)" fillcolor=lightblue]
+	6083398368 -> 6083976112
+	6083976112 [label=AccumulateGrad]
+	6083975536 -> 6083977168
+	6083398448 [label="bert.encoder.layer.11.attention.self.value.bias
+ (768)" fillcolor=lightblue]
+	6083398448 -> 6083975536
+	6083975536 [label=AccumulateGrad]
+	6083974816 -> 6083974720
+	6083398528 [label="bert.encoder.layer.11.attention.output.dense.weight
+ (768, 768)" fillcolor=lightblue]
+	6083398528 -> 6083974816
+	6083974816 [label=AccumulateGrad]
+	6083974768 -> 6083974720
+	6083398608 [label="bert.encoder.layer.11.attention.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083398608 -> 6083974768
+	6083974768 [label=AccumulateGrad]
+	6083974672 -> 6083974528
+	6083974480 -> 6083973904
+	6083398768 [label="bert.encoder.layer.11.attention.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083398768 -> 6083974480
+	6083974480 [label=AccumulateGrad]
+	6083974432 -> 6083973904
+	6083398688 [label="bert.encoder.layer.11.attention.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083398688 -> 6083974432
+	6083974432 [label=AccumulateGrad]
+	6083974384 -> 6083974288
+	6083398928 [label="bert.encoder.layer.11.intermediate.dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	6083398928 -> 6083974384
+	6083974384 [label=AccumulateGrad]
+	6083974336 -> 6083974288
+	6083399008 [label="bert.encoder.layer.11.intermediate.dense.bias
+ (3072)" fillcolor=lightblue]
+	6083399008 -> 6083974336
+	6083974336 [label=AccumulateGrad]
+	6083974048 -> 6083973952
+	6083398848 [label="bert.encoder.layer.11.output.dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	6083398848 -> 6083974048
+	6083974048 [label=AccumulateGrad]
+	6083974000 -> 6083973952
+	6083399088 [label="bert.encoder.layer.11.output.dense.bias
+ (768)" fillcolor=lightblue]
+	6083399088 -> 6083974000
+	6083974000 [label=AccumulateGrad]
+	6083973904 -> 6083973760
+	6083973712 -> 6083973616
+	6083399248 [label="bert.encoder.layer.11.output.LayerNorm.weight
+ (768)" fillcolor=lightblue]
+	6083399248 -> 6083973712
+	6083973712 [label=AccumulateGrad]
+	6083973664 -> 6083973616
+	6083399168 [label="bert.encoder.layer.11.output.LayerNorm.bias
+ (768)" fillcolor=lightblue]
+	6083399168 -> 6083973664
+	6083973664 [label=AccumulateGrad]
+	6083973568 -> 6083973424
+	6083973568 -> 6173702720 [dir=none]
+	6173702720 [label="other
+ (1, 50, 768)" fillcolor=orange]
+	6083973568 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6083974144 -> 6083973568
+	6083974144 [label="ViewBackward0
+-------------------------
+self_sym_sizes: (50, 768)"]
+	6083974192 -> 6083974144
+	6083974192 -> 6015521072 [dir=none]
+	6015521072 [label="input
+ (50, 768)" fillcolor=orange]
+	6083974192 -> 6015523712 [dir=none]
+	6015523712 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083974192 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974624 -> 6083974192
+	6083974624 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 4, 192)"]
+	6083975200 -> 6083974624
+	6083975200 [label="PermuteBackward0
+------------------
+dims: (2, 0, 1, 3)"]
+	6083974960 -> 6083975200
+	6083974960 [label="UnsafeViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6083975872 -> 6083974960
+	6083975872 -> 6173703280 [dir=none]
+	6173703280 [label="mat2
+ (200, 1, 192)" fillcolor=orange]
+	6083975872 -> 6173703200 [dir=none]
+	6173703200 [label="self
+ (200, 1, 1)" fillcolor=orange]
+	6083975872 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6083976064 -> 6083975872
+	6083976064 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (50, 4, 1, 1)"]
+	6084083824 -> 6083976064
+	6084083824 [label="ExpandBackward0
+-----------------------------
+self_sym_sizes: (50, 4, 1, 1)"]
+	6084084880 -> 6084083824
+	6084084880 -> 6173703120 [dir=none]
+	6173703120 [label="other
+ (50, 4, 1, 1)" fillcolor=orange]
+	6084084880 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6084085216 -> 6084084880
+	6084085216 -> 6173703920 [dir=none]
+	6173703920 [label="result
+ (50, 4, 1, 1)" fillcolor=orange]
+	6084085216 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084085744 -> 6084085216
+	6084085744 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (200, 1, 1)"]
+	6084085120 -> 6084085744
+	6084085120 -> 6173708592 [dir=none]
+	6173708592 [label="mat2
+ (200, 192, 1)" fillcolor=orange]
+	6084085120 -> 6173708432 [dir=none]
+	6173708432 [label="self
+ (200, 1, 192)" fillcolor=orange]
+	6084085120 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084085648 -> 6084085120
+	6084085648 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6084087520 -> 6084085648
+	6084087520 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6084072112 -> 6084087520
+	6084072112 [label="MulBackward1
+-------------------------
+other: 0.2686424829558855"]
+	6084072304 -> 6084072112
+	6084072304 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6084073984 -> 6084072304
+	6084073984 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	6084074368 -> 6084073984
+	6084074368 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084074848 -> 6084074368
+	6084074848 [label="SelectBackward0
+-------------------------------
+dim           :               0
+index         :               0
+self_sym_sizes: (3, 1, 50, 768)"]
+	6084075232 -> 6084074848
+	6084075232 [label=CloneBackward0]
+	6083929040 -> 6084075232
+	6083929040 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes:   (3, 1, 50, 1, 768)"]
+	6083930240 -> 6083929040
+	6083930240 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	6083930960 -> 6083930240
+	6083930960 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	6083931104 -> 6083930960
+	6083931104 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (1, 50, 2304)"]
+	6083931776 -> 6083931104
+	6083931776 -> 6015522272 [dir=none]
+	6015522272 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083931776 -> 6015524192 [dir=none]
+	6015524192 [label="weight
+ (2304, 768)" fillcolor=orange]
+	6083931776 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083973616 -> 6083931776
+	6084034624 -> 6083931776
+	6015524192 [label="transformer.layers.0.self_attn.in_proj_weight
+ (2304, 768)" fillcolor=lightblue]
+	6015524192 -> 6084034624
+	6084034624 [label=AccumulateGrad]
+	6084035152 -> 6083931776
+	6015524752 [label="transformer.layers.0.self_attn.in_proj_bias
+ (2304)" fillcolor=lightblue]
+	6015524752 -> 6084035152
+	6084035152 [label=AccumulateGrad]
+	6084087136 -> 6084085120
+	6084087136 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 192, 1)"]
+	6084072448 -> 6084087136
+	6084072448 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 192, 1)"]
+	6084072352 -> 6084072448
+	6084072352 [label="MulBackward1
+-------------------------
+other: 0.2686424829558855"]
+	6084071536 -> 6084072352
+	6084071536 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084071632 -> 6084071536
+	6084071632 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6083930624 -> 6084071632
+	6083930624 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	6083931488 -> 6083930624
+	6083931488 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084034672 -> 6083931488
+	6084034672 [label="SelectBackward0
+-------------------------------
+dim           :               0
+index         :               1
+self_sym_sizes: (3, 1, 50, 768)"]
+	6084075232 -> 6084034672
+	6083976208 -> 6083975872
+	6083976208 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6084084544 -> 6083976208
+	6084084544 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6084085600 -> 6084084544
+	6084085600 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6084084208 -> 6084085600
+	6084084208 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	6084074704 -> 6084084208
+	6084074704 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084071920 -> 6084074704
+	6084071920 [label="SelectBackward0
+-------------------------------
+dim           :               0
+index         :               2
+self_sym_sizes: (3, 1, 50, 768)"]
+	6084075232 -> 6084071920
+	6083974576 -> 6083974192
+	6015523712 [label="transformer.layers.0.self_attn.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	6015523712 -> 6083974576
+	6083974576 [label=AccumulateGrad]
+	6083973808 -> 6083974192
+	6015524272 [label="transformer.layers.0.self_attn.out_proj.bias
+ (768)" fillcolor=lightblue]
+	6015524272 -> 6083973808
+	6083973808 [label=AccumulateGrad]
+	6083973376 -> 6083973280
+	6015524032 [label="transformer.layers.0.norm1.weight
+ (768)" fillcolor=lightblue]
+	6015524032 -> 6083973376
+	6083973376 [label=AccumulateGrad]
+	6083973328 -> 6083973280
+	6015524592 [label="transformer.layers.0.norm1.bias
+ (768)" fillcolor=lightblue]
+	6015524592 -> 6083973328
+	6083973328 [label=AccumulateGrad]
+	6083973232 -> 6083788704
+	6083973232 -> 6173711872 [dir=none]
+	6173711872 [label="other
+ (1, 50, 768)" fillcolor=orange]
+	6083973232 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6083973856 -> 6083973232
+	6083973856 -> 6015522992 [dir=none]
+	6015522992 [label="input
+ (1, 50, 2048)" fillcolor=orange]
+	6083973856 -> 6015524352 [dir=none]
+	6015524352 [label="weight
+ (768, 2048)" fillcolor=orange]
+	6083973856 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083974912 -> 6083973856
+	6083974912 -> 6173712192 [dir=none]
+	6173712192 [label="other
+ (1, 50, 2048)" fillcolor=orange]
+	6083974912 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6083975008 -> 6083974912
+	6083975008 -> 6173716544 [dir=none]
+	6173716544 [label="result
+ (1, 50, 2048)" fillcolor=orange]
+	6083975008 [label="ReluBackward0
+----------------------
+result: [saved tensor]"]
+	6083975296 -> 6083975008
+	6083975296 -> 5766107280 [dir=none]
+	5766107280 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6083975296 -> 6015521952 [dir=none]
+	6015521952 [label="weight
+ (2048, 768)" fillcolor=orange]
+	6083975296 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083973280 -> 6083975296
+	6084071824 -> 6083975296
+	6015521952 [label="transformer.layers.0.linear1.weight
+ (2048, 768)" fillcolor=lightblue]
+	6015521952 -> 6084071824
+	6084071824 [label=AccumulateGrad]
+	6084084160 -> 6083975296
+	6015524512 [label="transformer.layers.0.linear1.bias
+ (2048)" fillcolor=lightblue]
+	6015524512 -> 6084084160
+	6084084160 [label=AccumulateGrad]
+	6083974240 -> 6083973856
+	6015524352 [label="transformer.layers.0.linear2.weight
+ (768, 2048)" fillcolor=lightblue]
+	6015524352 -> 6083974240
+	6083974240 [label=AccumulateGrad]
+	6083973472 -> 6083973856
+	6015523952 [label="transformer.layers.0.linear2.bias
+ (768)" fillcolor=lightblue]
+	6015523952 -> 6083973472
+	6083973472 [label=AccumulateGrad]
+	6083788656 -> 6083788560
+	6015523472 [label="transformer.layers.0.norm2.weight
+ (768)" fillcolor=lightblue]
+	6015523472 -> 6083788656
+	6083788656 [label=AccumulateGrad]
+	6083788608 -> 6083788560
+	6015524112 [label="transformer.layers.0.norm2.bias
+ (768)" fillcolor=lightblue]
+	6015524112 -> 6083788608
+	6083788608 [label=AccumulateGrad]
+	6083788512 -> 6083788368
+	6083788512 -> 6173717744 [dir=none]
+	6173717744 [label="other
+ (1, 50, 768)" fillcolor=orange]
+	6083788512 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6083788752 -> 6083788512
+	6083788752 [label="ViewBackward0
+-------------------------
+self_sym_sizes: (50, 768)"]
+	6083975632 -> 6083788752
+	6083975632 -> 6015486528 [dir=none]
+	6015486528 [label="input
+ (50, 768)" fillcolor=orange]
+	6083975632 -> 6015522592 [dir=none]
+	6015522592 [label="weight
+ (768, 768)" fillcolor=orange]
+	6083975632 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6084084784 -> 6083975632
+	6084084784 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 50, 4, 192)"]
+	6083928176 -> 6084084784
+	6083928176 [label="PermuteBackward0
+------------------
+dims: (2, 0, 1, 3)"]
+	6083928560 -> 6083928176
+	6083928560 [label="UnsafeViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6084034864 -> 6083928560
+	6084034864 -> 6173718304 [dir=none]
+	6173718304 [label="mat2
+ (200, 1, 192)" fillcolor=orange]
+	6084034864 -> 6173718224 [dir=none]
+	6173718224 [label="self
+ (200, 1, 1)" fillcolor=orange]
+	6084034864 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084037600 -> 6084034864
+	6084037600 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (50, 4, 1, 1)"]
+	6084038320 -> 6084037600
+	6084038320 [label="ExpandBackward0
+-----------------------------
+self_sym_sizes: (50, 4, 1, 1)"]
+	6084040064 -> 6084038320
+	6084040064 -> 6173718144 [dir=none]
+	6173718144 [label="other
+ (50, 4, 1, 1)" fillcolor=orange]
+	6084040064 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6084040448 -> 6084040064
+	6084040448 -> 6173718944 [dir=none]
+	6173718944 [label="result
+ (50, 4, 1, 1)" fillcolor=orange]
+	6084040448 [label="SafeSoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	6084040928 -> 6084040448
+	6084040928 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (200, 1, 1)"]
+	6084041600 -> 6084040928
+	6084041600 -> 6173719184 [dir=none]
+	6173719184 [label="mat2
+ (200, 192, 1)" fillcolor=orange]
+	6084041600 -> 6173719024 [dir=none]
+	6173719024 [label="self
+ (200, 1, 192)" fillcolor=orange]
+	6084041600 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	6084041216 -> 6084041600
+	6084041216 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6083875024 -> 6084041216
+	6083875024 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6083876560 -> 6083875024
+	6083876560 [label="MulBackward1
+-------------------------
+other: 0.2686424829558855"]
+	6083877088 -> 6083876560
+	6083877088 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6083877808 -> 6083877088
+	6083877808 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	6083878288 -> 6083877808
+	6083878288 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084092160 -> 6083878288
+	6084092160 [label="SelectBackward0
+-------------------------------
+dim           :               0
+index         :               0
+self_sym_sizes: (3, 1, 50, 768)"]
+	6084093264 -> 6084092160
+	6084093264 [label=CloneBackward0]
+	6084093792 -> 6084093264
+	6084093792 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes:   (3, 1, 50, 1, 768)"]
+	6084094512 -> 6084093792
+	6084094512 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	6084092064 -> 6084094512
+	6084092064 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	6173516080 -> 6084092064
+	6173516080 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (1, 50, 2304)"]
+	6173516896 -> 6173516080
+	6173516896 -> 6015522032 [dir=none]
+	6015522032 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6173516896 -> 6015522752 [dir=none]
+	6015522752 [label="weight
+ (2304, 768)" fillcolor=orange]
+	6173516896 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083788560 -> 6173516896
+	6173517568 -> 6173516896
+	6015522752 [label="transformer.layers.1.self_attn.in_proj_weight
+ (2304, 768)" fillcolor=lightblue]
+	6015522752 -> 6173517568
+	6173517568 [label=AccumulateGrad]
+	6173517280 -> 6173516896
+	6015523392 [label="transformer.layers.1.self_attn.in_proj_bias
+ (2304)" fillcolor=lightblue]
+	6015523392 -> 6173517280
+	6173517280 [label=AccumulateGrad]
+	6084042032 -> 6084041600
+	6084042032 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 192, 1)"]
+	6083876704 -> 6084042032
+	6083876704 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 192, 1)"]
+	6083875360 -> 6083876704
+	6083875360 [label="MulBackward1
+-------------------------
+other: 0.2686424829558855"]
+	6083875840 -> 6083875360
+	6083875840 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	6084094992 -> 6083875840
+	6084094992 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6084092544 -> 6084094992
+	6084092544 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	6173515840 -> 6084092544
+	6173515840 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6173518528 -> 6173515840
+	6173518528 [label="SelectBackward0
+-------------------------------
+dim           :               0
+index         :               1
+self_sym_sizes: (3, 1, 50, 768)"]
+	6084093264 -> 6173518528
+	6084037216 -> 6084034864
+	6084037216 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6084037888 -> 6084037216
+	6084037888 [label="ExpandBackward0
+-------------------------------
+self_sym_sizes: (50, 4, 1, 192)"]
+	6084041312 -> 6084037888
+	6084041312 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (200, 1, 192)"]
+	6084039584 -> 6084041312
+	6084039584 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	6083877376 -> 6084039584
+	6083877376 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (1, 50, 768)"]
+	6084093408 -> 6083877376
+	6084093408 [label="SelectBackward0
+-------------------------------
+dim           :               0
+index         :               2
+self_sym_sizes: (3, 1, 50, 768)"]
+	6084093264 -> 6084093408
+	6084085408 -> 6083975632
+	6015522592 [label="transformer.layers.1.self_attn.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	6015522592 -> 6084085408
+	6084085408 [label=AccumulateGrad]
+	6083973184 -> 6083975632
+	6015522912 [label="transformer.layers.1.self_attn.out_proj.bias
+ (768)" fillcolor=lightblue]
+	6015522912 -> 6083973184
+	6083973184 [label=AccumulateGrad]
+	6083788320 -> 6083788224
+	6015522352 [label="transformer.layers.1.norm1.weight
+ (768)" fillcolor=lightblue]
+	6015522352 -> 6083788320
+	6083788320 [label=AccumulateGrad]
+	6083788272 -> 6083788224
+	6015522832 [label="transformer.layers.1.norm1.bias
+ (768)" fillcolor=lightblue]
+	6015522832 -> 6083788272
+	6083788272 [label=AccumulateGrad]
+	6083788176 -> 6083788032
+	6083788176 -> 6173730992 [dir=none]
+	6173730992 [label="other
+ (1, 50, 768)" fillcolor=orange]
+	6083788176 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6083788464 -> 6083788176
+	6083788464 -> 6015523632 [dir=none]
+	6015523632 [label="input
+ (1, 50, 2048)" fillcolor=orange]
+	6083788464 -> 6015522672 [dir=none]
+	6015522672 [label="weight
+ (768, 2048)" fillcolor=orange]
+	6083788464 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083975104 -> 6083788464
+	6083975104 -> 6173731312 [dir=none]
+	6173731312 [label="other
+ (1, 50, 2048)" fillcolor=orange]
+	6083975104 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	6084036352 -> 6083975104
+	6084036352 -> 6173731392 [dir=none]
+	6173731392 [label="result
+ (1, 50, 2048)" fillcolor=orange]
+	6084036352 [label="ReluBackward0
+----------------------
+result: [saved tensor]"]
+	6084037072 -> 6084036352
+	6084037072 -> 6015520832 [dir=none]
+	6015520832 [label="input
+ (1, 50, 768)" fillcolor=orange]
+	6084037072 -> 6015523312 [dir=none]
+	6015523312 [label="weight
+ (2048, 768)" fillcolor=orange]
+	6084037072 [label="LinearBackward0
+----------------------
+input : [saved tensor]
+weight: [saved tensor]"]
+	6083788224 -> 6084037072
+	6083876224 -> 6084037072
+	6015523312 [label="transformer.layers.1.linear1.weight
+ (2048, 768)" fillcolor=lightblue]
+	6015523312 -> 6083876224
+	6083876224 [label=AccumulateGrad]
+	6084038864 -> 6084037072
+	6015523072 [label="transformer.layers.1.linear1.bias
+ (2048)" fillcolor=lightblue]
+	6015523072 -> 6084038864
+	6084038864 [label=AccumulateGrad]
+	6083973520 -> 6083788464
+	6015522672 [label="transformer.layers.1.linear2.weight
+ (768, 2048)" fillcolor=lightblue]
+	6015522672 -> 6083973520
+	6083973520 [label=AccumulateGrad]
+	6083928464 -> 6083788464
+	6015523152 [label="transformer.layers.1.linear2.bias
+ (768)" fillcolor=lightblue]
+	6015523152 -> 6083928464
+	6083928464 [label=AccumulateGrad]
+	6083787984 -> 6083787936
+	6015522432 [label="transformer.layers.1.norm2.weight
+ (768)" fillcolor=lightblue]
+	6015522432 -> 6083787984
+	6083787984 [label=AccumulateGrad]
+	6083787600 -> 6083787936
+	6015521632 [label="transformer.layers.1.norm2.bias
+ (768)" fillcolor=lightblue]
+	6015521632 -> 6083787600
+	6083787600 [label=AccumulateGrad]
+	6083787744 -> 6083787840
+	5766086880 [label="fc.weight
+ (256, 768)" fillcolor=lightblue]
+	5766086880 -> 6083787744
+	6083787744 [label=AccumulateGrad]
+	6083785872 -> 6083787840
+	5766090160 [label="fc.bias
+ (256)" fillcolor=lightblue]
+	5766090160 -> 6083785872
+	6083785872 [label=AccumulateGrad]
+	6083787504 -> 6083374480
+	5766089360 [label="out.weight
+ (3, 256)" fillcolor=lightblue]
+	5766089360 -> 6083787504
+	6083787504 [label=AccumulateGrad]
+	6083787456 -> 6083374480
+	5766088560 [label="out.bias
+ (3)" fillcolor=lightblue]
+	5766088560 -> 6083787456
+	6083787456 [label=AccumulateGrad]
+	6083374480 -> 6015495040
+}

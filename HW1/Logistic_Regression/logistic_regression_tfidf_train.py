@@ -5,7 +5,7 @@ import logging
 
 
 logging.basicConfig(
-    filename="./results/training_half_dataset.log",  # Log file path
+    filename="./results/training_quarter_dataset.log",  # Log file path
     level=logging.INFO,  # Set logging level
     format="%(message)s",  # Format log messages
 )
@@ -14,7 +14,7 @@ logging.info("🔹 Starting Sentiment Analysis Training Process")
 
 
 # 🔹 Load labeled YouTube comments dataset
-df = pd.read_csv("./../data/english_comments_labeled.csv").sample(frac=0.5, random_state=42)
+df = pd.read_csv("./../data/english_comments_labeled.csv").sample(frac=0.25, random_state=42)
 
 logging.info(f"Class distribution:\n{df['sentiment'].value_counts()}\n--------------------------\n")
 
@@ -82,7 +82,7 @@ plt.xlabel("Training Samples")
 plt.ylabel("Accuracy")
 plt.title("Learning Curve of Logistic Regression")
 plt.legend()
-plt.savefig("./results/logistic_regression_tfidf_learning_curve_half_dataset.png")
+plt.savefig("./results/logistic_regression_tfidf_learning_curve_quarter_dataset.png")
 
 
 import seaborn as sns
@@ -100,7 +100,7 @@ sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_names, ytic
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.title("Confusion Matrix")
-plt.savefig("./results/logistic_regression_tfidf_confussion_matrix_half_dataset.png")
+plt.savefig("./results/logistic_regression_tfidf_confussion_matrix_quarter_dataset.png")
 
 
 from sklearn.metrics import roc_curve, auc
@@ -147,14 +147,14 @@ plt.xlabel("False Positive Rate")
 plt.ylabel("True Positive Rate")
 plt.title("ROC Curve for Logistic Regression (TF-IDF)")
 plt.legend(loc="lower right")
-plt.savefig("./results/logistic_regression_tfidf_roc_curve_half_dataset.png")
+plt.savefig("./results/logistic_regression_tfidf_roc_curve_quarter_dataset.png")
 
 
 
 import joblib
 
 # Save the model
-joblib.dump(clf, "./models/logistic_regression_tfidf_model_half_dataset.pkl")
+joblib.dump(clf, "./models/logistic_regression_tfidf_model_quarter_dataset.pkl")
 
 # Save the vectorizer
-joblib.dump(vectorizer, "./models/tfidf_vectorizer_half_dataset.pkl")
+joblib.dump(vectorizer, "./models/tfidf_vectorizer_quarter_dataset.pkl")

@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import logging
 logging.basicConfig(
-    filename="./results/training_half_dataset.log",  # Log file path
+    filename="./results/training_quarter_dataset.log",  # Log file path
     level=logging.INFO,  # Set logging level
     format="%(message)s",  # Format log messages
 )
@@ -12,7 +12,7 @@ logging.basicConfig(
 
 
 # 🔹 Load YouTube comments dataset
-df = pd.read_csv("./../data/english_comments_labeled.csv").sample(frac=0.5, random_state=42)
+df = pd.read_csv("./../data/english_comments_labeled.csv").sample(frac=0.25, random_state=42)
 
 # 🔹 Convert sentiment labels (-1 = Negative, 0 = Neutral, 1 = Positive) to sequential classes (0, 1, 2)
 label_mapping = {-1: 0, 0: 1, 1: 2}
@@ -105,14 +105,14 @@ from transformers import Trainer, TrainingArguments
 
 # 🔹 Define Training Arguments
 training_args = TrainingArguments(
-    output_dir="./bert_transformer_model_half_dataset",
+    output_dir="./bert_transformer_model_quarter_dataset",
     evaluation_strategy="epoch",
     save_strategy="epoch",
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
     num_train_epochs=5,
     weight_decay=0.01,
-    logging_dir="./logs_half_dataset",
+    logging_dir="./logs_quarter_dataset",
     logging_steps=10,
     report_to="tensorboard",  # ✅ Enable TensorBoard
     use_mps_device=True  # ✅ Enables Apple GPU acceleration
@@ -157,7 +157,7 @@ sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_names, ytic
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.title("Confusion Matrix")
-plt.savefig("./results/BERT_transformer_confussion_matrix_half_dataset.png")
+plt.savefig("./results/BERT_transformer_confussion_matrix_quarter_dataset.png")
 
 
 
@@ -188,9 +188,9 @@ plt.ylabel('True Positive Rate')
 plt.title('Multi-class ROC Curve (One-vs-Rest) - BERT Transformer')
 plt.legend()
 plt.grid()
-plt.savefig("./results/BERT_transformer_roc_curve_half_dataset.png")
+plt.savefig("./results/BERT_transformer_roc_curve_quarter_dataset.png")
 
 
 
-torch.save(model.state_dict(), "./models/model_weights_half_dataset.pth")
+torch.save(model.state_dict(), "./models/model_weights_quarter_dataset.pth")
 
